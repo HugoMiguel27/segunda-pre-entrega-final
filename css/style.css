@@ -21,12 +21,99 @@ ul {
 }
 nav ul a {
     text-decoration: none;
-    color: gray;
+    color: #bababa;
     font-size: 1.25rem;
     font-weight: 500;
 }
 /*main*/
+.titulo-principal{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 4.6875rem;
+    font-weight: 700;
+    text-align: start;
+    padding-left: 18.75rem;
+    padding-top: 2.5rem;
+}
 
+.pregunta{
+    text-align: center;
+}
+
+.texto-carta {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+.primera-seccion{
+    padding-bottom: 9.375rem;
+}
+.descripcion-orientate {
+    font-size:x-large;
+    color: white;
+    text-align: start;
+    padding-left: 18.75rem;
+    padding-top: 1.875rem;
+}
+.contenedor-de-fotos{
+padding: 6.25rem 0;
+}
+
+.titulo-pregunta{
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 25rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffa200;
+    font-weight: 700;
+}
+
+.contenedor-surgimiento{
+padding-top: 12.5rem;
+padding-bottom: 9.375rem;
+}
+
+.surgimiento{    
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffa200;
+    font-weight: 700;
+    padding-top: 15.625rem;
+    padding-right: 3.125rem;
+
+}
+
+.surgimiento-parrafo{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 1.5625rem;
+    justify-content: center;
+    padding-top: 1.25rem
+}
+
+.contenedor-dedicacion{
+padding-top: 9.375rem;
+padding-bottom: 9.375rem;
+}
+
+.pregunta-dedicacion{
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 12.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffa200;
+    font-weight: 700;
+}
+
+.dedicacion-parrafo{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 1.5625rem;
+    padding-top: 1.25rem;
+}
 
 /*footer*/
 

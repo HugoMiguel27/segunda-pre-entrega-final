@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <header class="container-fluid bg-dark pt-4">
+    <header class="bg-dark pt-4">
         <div class="row">
             <a href="index.html" class="col-sm-12 col-md-4 col-lg-7 ps-5">
                 <img src="./assets/imagenes/home.png" alt="Logo ORIENT">
             </a>
             <nav class="col-sm-12 col-md-8 col-lg-5 pe-5">
                 <ul class="d-flex gap-5 pt-4  justify-content-end">
-                    <li><a href="">Curso</a></li>
+                    <li><a href="">Cursos</a></li>
                     <li><a href="">Exámenes simulacro</a></li>
                     <li><a href="">Material</a></li>
                     <li><a href="">Contacto</a></li>
@@ -27,10 +27,110 @@
         </div>
     </header>
     <main>
-
+        <section class="primera-seccion row bg-black pt-5">
+            <div class="col-7">
+                <p class="titulo-principal">Explota todas tus capacidades.</p>
+                <p class="descripcion-orientate pt-4 pb-5">Orient® es una institución en donde conocemos lo difícil que
+                    es querer sobresalir sin tener una ventaja previa sobre los demás.
+                    <br>
+                    <br>
+                    ¡Vuélvete el mejor en lo que quieres ser!
+                </p>
+            </div>
+            <div class="col">
+                <img src="./assets/imagenes/bioquimico.png" alt="Quimico">
+            </div>
+        </section>
+        <section class="row bg-dark contenedor-de-fotos">
+            <div class="col-7">
+                <p class="titulo-pregunta">¿Quiénes conformamos el equipo de Orient®?</p>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide col-4 ">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/imagenes/persona 1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Juan Manuel González</h5>
+                            <p>Médico cirujano graduado con honores de la UNAM.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagenes/persona 2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sofia Pérez Prado</h5>
+                            <p>Diseñadora y artista gráfica multirreconocida.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/imagenes/persona 3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Jaime Facún</h5>
+                            <p>Contador e inversionista de la bolsa de valores.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        </section>
+        <section class="row bg-black contenedor-surgimiento">
+            <div class="col-7">
+                <p class="surgimiento">¿Cómo surgió Orient®?</p>
+            </div>
+            <div class=" col-4 text-white surgimiento-parrafo border border-warning rounded-5">
+                <p>Cuando ya tienes una idea de cuál es tu vocación y te quieres dedicar a ello, es fácil que te
+                    apasione, pero esto no basta para sobresalir en un mundo tan competitivo como en el que nos
+                    encontramos. <br> <br>Pensamos que si cada futuro médico, ingeniero, contador, diseñador, etc.
+                    comenzara a prepararse con temas acorde a sus profesiones mucho antes de que la escuela
+                    lo solicite, entonces tendrás una ventaja en cuanto a conocimientos y una pequeña
+                    experiencia en el campo. <br> Como ya lo comprobamos, ¡esto sin duda te hará resaltar como una
+                    esfera entre cubos!.
+                    <br> <br> Así es como nace ORIENT®.
+                </p>
+            </div>
+        </section>
+        <section class="row bg-dark contenedor-dedicacion">
+            <div class="col-7">
+                <p class="pregunta-dedicacion">¿A qué nos dedicamos?</p>
+            </div>
+            <div class="col-4 dedicacion-parrafo text-white border border-warning rounded-5">
+                <p>Contamos con 3 áreas: Administración, Diseño y Medicina. <br> <br>
+                    Dependiendo del área de aprendizaje a la que te dirijas, te llevará 6 meses aprender desde temas y
+                    conceptos básicos, realizar prácticas y utilizar programas y herramientas que te enseñarán hasta que
+                    estés en tu carrera.
+                    <br><br>
+                    Además, durante 4 clases tendrás prácticas reales en las cuales te evaluaremos y corregiremos como
+                    si estuvieras en tus prácticas profesionales.
+                </p>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class=" bg-black">
+        <ul class="texto-footer nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Opiniones</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contacto</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Sucursales</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preguntas frecuentes</a></li>
+        </ul>
+        <p class="texto-footer text-center text-white">&copy; 2023 Orient SA. de. CV.</p>
     </footer>
 
 
