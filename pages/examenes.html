@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUGO - Formulario</title>
+    <link rel="shortcut icon" href="../assets/imagenes/logo_hugo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bodySerCreador">
+    <header>
+        <a href="../index.html" class="logoHugo">
+            <img src="../assets/imagenes/Logo_hugo.png" alt="Logo HUGO">
+        </a>
+        <nav>
+            <a href="#"><img src="../assets/imagenes/barra_de_busqueda2.png" class="barraDeBusqueda"
+                    alt="Barra de búsqueda"></a>
+            <a href="../index.html">Inicio</a>
+            <a href="./novedades.html">Novedades</a>
+            <a href="./masdescargadas.html">Más descargadas</a>
+            <a href="./sercreador.html">¿Quieres ser creador?</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionMensajeDeBienvenida">
+            <h5>Bienvenido, para ser creador lee atentamente.</h5>
+        </section>
+        <section class="datosDeTexto">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="Escribe tu mail" required>
+            </div>
+            <div>
+                <label for="contacto">Datos de contacto adicionales:</label>
+                <input type="text" id="contacto" placeholder="Segundo e-mail, teléfono..." required>
+            </div>
+        </section>
+        <section class="datosDeOpcionMultiple">
+            <p>¿Qué tipo de fotografía deseas aportar?</p>
+            <label for="fotografia">Fotografías</label>
+            <input type="radio" id="fotografia" name="contenido" value="fotografia" required>
+            <label for="arteDigital">Arte Digital</label>
+            <input type="radio" id="arteDigital" name="contenido1" value="arteDigital" required>
+            <label for="disenoGrafico">Diseño Gráfico</label>
+            <input type="radio" id="disenoDigital" name="contenido2" value="disenoGrafico" required>
+            <p>¿Deseas obtener remuneración?</p>
+            <label for="remuneracionSi">Sí</label>
+            <input type="radio" id="remuneracionSi" name="pago" value="remuneracionSi" required>
+            <label for="remuneracionNo">No</label>
+            <input type="radio" id="remuneracionNo" name="pago" value="remuneracionNo" required>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <Section class="sectionFooter">
+            <a title="Facebook" href="https://www.facebook.com/" target="_blank"><img
+                    src="../assets/imagenes/logo_facebook.png" alt="Logo Facebook"></a>
+            <a title="Twitter" href="https://twitter.com/?lang=es" target="_blank"><img
+                    src="../assets/imagenes/Logo_twitter.png" alt="Logo Twitter"></a>
+            <a title="Instagram" href="https://www.instagram.com" target="_blank"><img
+                    src="../assets/imagenes/logo_instagram.png" alt="Logo Instagram"></a>
+            <a title="Pinterest" href="https://www.pinterest.com.mx/" target="_blank"><img
+                    src="../assets/imagenes/logo_pinterest.png" alt="Logo Pinterest"></a>
+            <a title="Threads" href="https://www.threads.net/" target="_blank"><img
+                    src="../assets/imagenes/logo_threads.png" alt="Logo Threads"></a>
+            <h6>Copyright© Hugo Miguel - All rights reserved</h6>
+        </Section>
+    </footer>
+</body>
+
+</html>
