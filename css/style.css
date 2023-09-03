@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 /* font-family: 'Quicksand', sans-serif; */
+
 
 *{
     margin: 0;
@@ -120,6 +121,164 @@ padding-bottom: 9.375rem;
 /*footer*/
 
 
+
+
+/*CURSOS.HTML*/
+
+
+/*header cursos.html*/
+header{
+    width: 100%;
+    background-color: #212429;
+}
+.barra-de-navegacion{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 9.375rem;
+}
+
+.logo-esquina{
+padding-top: 1.5rem;
+padding-left: 3rem;
+}
+
+.nav-cursos ul{
+    display: flex;
+    gap: .625rem;
+    justify-content: end;
+    padding-right: 4rem;
+    padding-top: 3.125rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    gap: 2.75rem;
+}
+
+
+/*main*/
+
+main{
+    background-color: black;
+}
+
+.titulos-superiores{
+    padding-left: 10rem;
+    padding-top: 6.25rem;
+}
+
+.titulos-superiores h2{
+    color: orange;
+    font-size: 1.875rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.titulos-superiores h1{
+    color: white;
+    font-size: 3.125rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 700;
+}
+
+.imagen-profesion{
+    width: 15.625rem;
+    height: 15.625rem;
+}
+
+.section-grids{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: ". medicina  administración diseño . ";
+    width: 100%;
+    align-items: center;
+    padding-top: 6.25rem;
+    gap: 2.1875rem;
+}
+
+.tarjeta-medicina{
+    grid-area: medicina;
+    height: 100%;
+    background-color: #1d60e9;
+    border-radius: 1.875rem;
+    padding-top: .625rem;
+}
+
+.tarjeta-administracion{
+    grid-area: administración;
+    height: 100%;
+    background-color: #912e0e;
+    border-radius: 1.875rem;
+    padding-top: .625rem;
+}
+
+.tarjeta-diseño{
+    grid-area: diseño;
+    background-color: #c65400;
+    border-radius: 1.875rem;
+    height: 100%;
+    padding-top: .625rem;
+}
+
+.titulo-tarjeta-medicina{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-style:initial;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: .625rem;
+}
+
+.parrafo-superior-medicina{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    font-style:normal;
+    padding-bottom: .625rem;
+}
+
+.titulo-tarjeta-administracion{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-style:initial;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: .625rem;
+}
+
+.parrafo-superior-administracion{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    font-style:normal;
+    padding-bottom: .625rem;
+}
+
+.titulo-tarjeta-diseño{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-style:initial;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: .625rem;
+}
+
+.parrafo-superior-diseño{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    font-style:normal;
+    padding-bottom: .625rem;
+}
+/*footer*/
+
 /*media 1024*/
 
 /*media 768*/
@@ -127,3 +286,8 @@ padding-bottom: 9.375rem;
 /*media 468*/
 
 /*media 320*/
+
+
+
+
+
