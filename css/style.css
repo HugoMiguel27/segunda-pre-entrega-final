@@ -779,6 +779,7 @@ main{
     grid-template-columns: auto 25% 40% auto;
     grid-template-rows: auto;
     grid-template-areas: ". formulario2023 descripcionformulario .";
+    padding-bottom: 12.5rem;
 }
 
 .imagen-formulario-2023{
@@ -823,3 +824,77 @@ main{
 }
 /************footer************/
 
+/****************************CONTACTO********************/
+
+/************header************/
+
+/************main*************/
+
+.titulos-superiores-contacto{
+    padding-left: 11.25rem;
+    padding-top: 6.25rem;
+    padding-bottom: 5rem;
+}
+
+.titulos-superiores-contacto h2{
+    color: orange;
+    font-size: 1.875rem;
+    font-family: 'Quicksand', sans-serif;
+    text-align: start;
+}
+.titulos-superiores-contacto h1{
+    color: white;
+    font-size: 3.125rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    text-align: start;
+}
+
+.contactos{
+    display: grid;
+    width: 100%;
+    grid-template-columns:auto 24% 25% 25% auto;
+    grid-template-areas:    ". messenger1 operadores operadores ."
+                            ". whatsapp1 operadores operadores ."
+                            ". telefono1 operadores operadores .";
+}
+
+.logo-messenger{
+    grid-area: messenger1;
+}
+
+.logo-messenger img{
+    width: 3.75rem;
+}
+
+.logo-whatsapp{
+    grid-area: whatsapp1;
+
+}
+
+.logo-whatsapp img{
+    width: 3.75rem;
+}
+
+.logo-telefono{
+    grid-area: telefono1;
+}
+
+.logo-telefono img{
+    width: 3.75rem;
+}
+
+.imagen-operadores{
+    grid-area: operador;
+    width: 100%;
+}
+
+.recuerda {
+    color: #474e56;
+    font-size: .9375rem;
+    font-family: 'Quicksand', sans-serif;
+    text-align: start;
+    padding-left: 11.25rem;
+}
+
+/************footer************/
