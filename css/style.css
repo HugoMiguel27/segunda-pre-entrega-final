@@ -11,6 +11,11 @@ font-family: 'Quicksand', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
+
+a{
+    text-decoration: none;
+}
+
 /***************************INDEX.HTML*********************************/
 body{
     background-color: white;
@@ -216,6 +221,10 @@ main{
     padding-top: .625rem;
 }
 
+.tarjeta-medicina a:visited{
+    text-decoration: none;
+}
+
 .tarjeta-administracion{
     grid-area: administración;
     height: 100%;
@@ -321,8 +330,14 @@ main{
     font-size:large;
     font-weight: 700;
     text-align: left;
+    text-decoration: none;
     padding-left: 2.5rem;
     padding-bottom: 1.875rem;
+}
+
+.lista-de-contenido a:visited{
+    color: #b0b0b0;
+    text-decoration:none;
 }
 
 .registro{
