@@ -832,8 +832,8 @@ main{
 
 .titulos-superiores-contacto{
     padding-left: 11.25rem;
-    padding-top: 6.25rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
 }
 
 .titulos-superiores-contacto h2{
@@ -850,51 +850,106 @@ main{
     text-align: start;
 }
 
-.contactos{
+.medios-de-contacto{
     display: grid;
-    width: 100%;
-    grid-template-columns:auto 24% 25% 25% auto;
-    grid-template-areas:    ". messenger1 operadores operadores ."
-                            ". whatsapp1 operadores operadores ."
-                            ". telefono1 operadores operadores .";
+    grid-template-columns: auto 24% 25% 25% auto;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:    ".    WhatsApp    CallCenter   CallCenter    ."
+                            ".    Messenger   CallCenter   CallCenter    ."
+                            ".    Teléfono    CallCenter   CallCenter    .";
+
+    place-items: center; 
+    padding-bottom: 6.25rem;                       
 }
 
-.logo-messenger{
-    grid-area: messenger1;
+.whatsapp-contacto{
+    display: flex;
+    grid-area: WhatsApp;
+    color: white;
 }
 
-.logo-messenger img{
-    width: 3.75rem;
+.whatsapp-contacto button{
+    background-color: #535353;
+    border-radius: 1.25rem;
+    box-shadow: none;
+    padding: .3125rem    2.5rem;
 }
 
-.logo-whatsapp{
-    grid-area: whatsapp1;
-
+.whatsapp-contacto img{
+    width: 4.375rem;
+    padding-bottom: .625rem;
 }
 
-.logo-whatsapp img{
-    width: 3.75rem;
+.whatsapp-contacto p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: orange;
 }
 
-.logo-telefono{
-    grid-area: telefono1;
+.messenger-contacto{
+    grid-area: Messenger;
+    color: white;
 }
 
-.logo-telefono img{
-    width: 3.75rem;
+.messenger-contacto button{
+    background-color: #535353;
+    border-radius: 1.25rem;
+    box-shadow: none;
+    padding: .3125rem    2.5rem;
 }
 
-.imagen-operadores{
-    grid-area: operador;
-    width: 100%;
+.messenger-contacto img{
+    width: 4.375rem;
+    padding-bottom: .625rem;
 }
 
-.recuerda {
-    color: #474e56;
+.messenger-contacto p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: orange;
+}
+
+.telefono-contacto{
+    grid-area: Teléfono;
+    color: white;
+}
+
+.telefono-contacto button{
+    background-color: #535353;
+    border-radius: 1.25rem;
+    padding: .3125rem    2.5rem;
+}
+
+.telefono-contacto img{
+    width: 4.375rem;
+    padding-bottom: .625rem;
+}
+
+.telefono-contacto p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: orange;
+}
+
+.callcenter-contacto{
+    grid-area: CallCenter;
+    color: white;
+}
+
+.callcenter-contacto img{
+    width: 31.25rem;
+}
+
+.recuerda{
+    color: #898989;
     font-size: .9375rem;
     font-family: 'Quicksand', sans-serif;
     text-align: start;
     padding-left: 11.25rem;
+    padding-bottom: 7.5rem;
 }
 
 /************footer************/
