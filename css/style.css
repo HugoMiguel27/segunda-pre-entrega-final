@@ -388,7 +388,7 @@ main{
     width: 100%;
     align-items: center;
     padding-top: 6.25rem;
-    padding-bottom: 5rem;
+    padding-bottom: 12.5rem;
     gap: 3.4375rem;
 }
 
@@ -772,6 +772,11 @@ header{
 .logo-esquina{
     padding-left: 7.5rem;
 }
+
+.lista-opiniones{
+    flex-direction: column;
+    align-items: center;
+}
 }
 /***************************EXÁMENES.HTML*********************************/
 
@@ -915,13 +920,7 @@ header{
 
 /*******************media************/
 
-/*media 1024*/
 
-/*media 768*/
-
-/*media 468*/
-
-/*media 320*/
 
 
 /*******************************MATERIAL.HTML********************/
@@ -1049,6 +1048,71 @@ header{
     margin-bottom: 20%;
 }
 /************footer************/
+
+
+/*media 1024*/
+
+/*media 768*/
+
+/*media 468*/
+
+/*media 320*/
+@media (max-width: 320px){
+.titulos-superiores-material {
+    padding: 2.5rem 5% 0 5%;
+}
+
+.manual-2023{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    padding-bottom: 12.5rem;
+}
+
+.imagen-manual-2023{
+    grid-column: 1/2;
+    grid-row:1/2;
+    margin: 0 5%;
+}
+
+.imagen-manual-2023 img{
+    width: 80%;
+    margin: 10%;
+}
+
+.descripcion-manual-2023{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 5%;
+}
+
+.formulario-2023{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    padding-bottom: 12.5rem;
+}
+
+.imagen-formulario-2023{
+    grid-column: 1/2;
+    grid-row:1/2;
+    margin: 0 5%;
+}
+
+.descripcion-formulario-2023{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 5%;
+}
+
+.imagen-formulario-2023 img{
+    width: 80%;
+    margin: 10%;
+
+}
+}
 
 /****************************CONTACTO********************/
 
