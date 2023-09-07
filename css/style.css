@@ -551,14 +551,61 @@ main{
     margin-bottom: 1rem;
 }
 
-/***************************EXÁMENES.HTML*********************************/
+/*******************media************/
+
 /*media 1024*/
+
+@media  (max-width: 1024px){
+
+    .titulos-superiores{
+        padding-left: 7.5rem;
+    }
+
+    .registro{
+        padding-left: 7.5rem;
+        margin-right: 7.5rem;
+    }
+
+    .section-grids{
+        grid-template-columns: auto 24% 24% 24% auto;
+        gap: 1.25rem;
+    }
+
+    .otros-cursos {
+        padding-left: 7.5rem;
+    }
+
+    .section-grids-2 {
+        grid-template-columns: auto 24% 24% 24% auto;
+        gap: 1.25rem;
+    }
+
+    .parrafo-superior-ingenieria{
+        padding: 0 .625rem;
+    }
+
+    .parrafo-superior-arquitectura{
+    padding: 0 .625rem;
+    }
+
+    .parrafo-superior-programacion{
+        padding: 0 .625rem;
+        }
+
+    .disponible-tarjeta {
+        padding: 0 .625rem;
+    }
+    }
+    
+    
 
 /*media 768*/
 
 /*media 468*/
 
 /*media 320*/
+
+/***************************EXÁMENES.HTML*********************************/
 
 
 /************header****************/
@@ -697,6 +744,17 @@ main{
     font-family: 'Quicksand', sans-serif;
 }
 /************footer****************/
+
+/*******************media************/
+
+/*media 1024*/
+
+/*media 768*/
+
+/*media 468*/
+
+/*media 320*/
+
 
 /*******************************MATERIAL.HTML********************/
 
@@ -868,6 +926,10 @@ main{
     color: white;
 }
 
+.whatsapp-contacto button:hover{
+    background-color: #9ebcbf;
+}
+
 .whatsapp-contacto button{
     background-color: #535353;
     border-radius: 1.25rem;
@@ -887,9 +949,18 @@ main{
     color: orange;
 }
 
+.whatsapp-contacto p::first-letter{
+    color: white;
+    font-size: 1.875rem;
+}
+
 .messenger-contacto{
     grid-area: Messenger;
     color: white;
+}
+
+.messenger-contacto button:hover{
+    background-color: #9ebcbf;
 }
 
 .messenger-contacto button{
@@ -911,9 +982,18 @@ main{
     color: orange;
 }
 
+.messenger-contacto p::first-letter{
+    color: white;
+    font-size: 1.875rem;
+}
+
 .telefono-contacto{
     grid-area: Teléfono;
     color: white;
+}
+
+.telefono-contacto button:hover{
+    background-color: #9ebcbf;
 }
 
 .telefono-contacto button{
@@ -934,6 +1014,11 @@ main{
     color: orange;
 }
 
+.telefono-contacto p::first-letter{
+    color: white;
+    font-size: 1.875rem;
+}
+
 .callcenter-contacto{
     grid-area: CallCenter;
     color: white;
@@ -951,5 +1036,7 @@ main{
     padding-left: 11.25rem;
     padding-bottom: 7.5rem;
 }
+
+
 
 /************footer************/
