@@ -163,7 +163,6 @@ padding-left: 3rem;
 
 .nav-cursos ul{
     display: flex;
-    gap: .625rem;
     justify-content: end;
     padding-right: 4rem;
     padding-top: 3.125rem;
@@ -592,19 +591,188 @@ main{
         padding: 0 .625rem;
         }
 
-    .disponible-tarjeta {
-        padding: 0 .625rem;
-    }
-    }
+
+}
     
     
 
 /*media 768*/
+@media (max-width: 768px){
+    .nav-cursos ul{
+        gap: 1.25rem;
+        padding-right: 1.875rem;
+    }
+    .disponible-tarjeta {
+        padding: 0 .625rem;
+    }
 
-/*media 468*/
+    .tarjeta-administracion{
+        width: 11.875rem;
+    }
+
+    .tarjeta-diseño{
+        width: 11.875rem;
+    }
+
+    .tarjeta-medicina{
+        width: 11.875rem;
+    }
+
+
+    .titulos-superiores {
+        padding-left: 5.625rem;
+    }
+
+    .titulo-tarjeta-medicina{
+    font-size: 1.25rem;
+    }
+
+    .titulo-tarjeta-administracion{
+        font-size: 1.25rem;
+    }
+
+    .titulo-tarjeta-diseño{
+        font-size: 1.25rem;
+    }
+
+    .titulo-tarjeta-arquitectura{
+        font-size: 1.25rem;
+    }
+
+    .titulo-tarjeta-programacion{
+        font-size: 1.25rem;
+    }
+
+    .titulo-tarjeta-ingenieria{
+        font-size: 1.25rem;
+    }
+
+    .parrafo-superior-administracion{
+        font-size: 1.125rem;
+    }
+
+    .parrafo-superior-arquitectura{
+        font-size: 1.125rem;
+    }
+
+    .parrafo-superior-diseño{
+        font-size: 1.125rem;
+    }
+
+    .parrafo-superior-ingenieria{
+        font-size: 1.125rem;
+    }
+
+    .parrafo-superior-medicina{
+        font-size: 1.125rem;
+    }
+
+    .parrafo-superior-programacion{
+        font-size: 1.125rem;
+    }
+
+    .registro{
+        padding-left: 5.625rem;
+    }
+    .otros-cursos{
+        padding-left: 5.625rem;
+    }
+
+    .disponible-tarjeta{
+        font-size: 1.375rem;
+    }
+
+    .lista-de-contenido{
+        padding-left: 1.25rem;
+    }
+}
 
 /*media 320*/
+@media (max-width: 320px){
+    .section-grids{
+        display: grid;
+        grid-template-columns:90%;
+        grid-template-rows: repeat(3,auto);
+        align-content: center;
+        }
 
+.titulos-superiores {
+    padding: 2.5rem 5% 0 5%;
+}
+.tarjeta-medicina{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    margin: 0 5%;
+}
+
+.tarjeta-administracion{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    margin: 0 5%;
+}
+.tarjeta-diseño{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+        margin: 0 5%;
+}
+
+.registro{
+        padding: 2.5rem 5% 4.375rem 5%;
+        margin-right: 0;
+}
+.otros-cursos{
+    padding: 2.5rem 5% 0 5%;
+}
+
+
+.section-grids-2{
+    display: grid;
+        grid-template-columns:90%;
+        grid-template-rows: repeat(3,auto);
+        align-content: center;
+        padding-bottom: 12.5rem;
+}
+
+.tarjeta-ingenieria{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    margin: 0 5%;
+}
+.tarjeta-arquitectura{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    margin: 0 5%;
+}
+.tarjeta-programacion{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+    margin: 0 5%;
+}
+
+header{
+    height: 21.875rem;
+}
+
+.nav-cursos ul{
+    flex-direction: column;
+    padding-top: 9.375rem;
+    justify-self: start;
+    width: 100%;
+    justify-content: start;
+    text-align: start;
+    gap: 1.25rem;
+}
+
+.logo-esquina{
+    padding-left: 7.5rem;
+}
+}
 /***************************EXÁMENES.HTML*********************************/
 
 
