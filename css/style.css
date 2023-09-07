@@ -154,7 +154,8 @@ nav ul a {
 /***************************CURSOS.HTML*********************************/
 
 
-/*header cursos.html*/
+/*header*/
+
 header {
     width: 100%;
     background-color: #212429;
@@ -181,7 +182,6 @@ header {
     font-weight: 500;
     gap: 2.75rem;
 }
-
 
 /*main*/
 
@@ -229,7 +229,6 @@ main {
 .tarjeta-medicina {
     grid-area: medicina;
     height: 100%;
-    background-color: #1d60e9;
     background-color: #1b2031;
     border-radius: 1.875rem;
     padding-top: .625rem;
@@ -239,22 +238,35 @@ main {
     text-decoration: none;
 }
 
+.tarjeta-medicina:hover {
+    background-color: #3f444e;
+    height: 98%;
+}
+
 .tarjeta-administracion {
     grid-area: administración;
     height: 100%;
-    background-color: #912e0e;
     background-color: #1b2031;
     border-radius: 1.875rem;
     padding-top: .625rem;
 }
 
+.tarjeta-administracion:hover {
+    background-color: #3f444e;
+    height: 98%;
+}
+
 .tarjeta-diseño {
     grid-area: diseño;
-    background-color: #c65400;
     background-color: #1b2031;
     border-radius: 1.875rem;
     height: 100%;
     padding-top: .625rem;
+}
+
+.tarjeta-diseño:hover {
+    background-color: #3f444e;
+    height: 98%;
 }
 
 .titulo-tarjeta-medicina {
@@ -413,6 +425,11 @@ main {
     padding-top: .625rem;
 }
 
+.tarjeta-ingenieria:hover {
+    background-color: #494860;
+    height: 98%;
+}
+
 .tarjeta-arquitectura {
     grid-area: arquitectura;
     height: 100%;
@@ -422,6 +439,12 @@ main {
     padding-top: .625rem;
 }
 
+.tarjeta-arquitectura:hover {
+    background-color: #494860;
+    height: 98%;
+}
+
+
 .tarjeta-programacion {
     grid-area: programacion;
     background-color: #c65400;
@@ -430,6 +453,12 @@ main {
     height: 100%;
     padding-top: .625rem;
 }
+
+.tarjeta-programacion:hover {
+    background-color: #494860;
+    height: 98%;
+}
+
 
 .titulo-tarjeta-ingenieria {
     color: white;
@@ -533,6 +562,10 @@ main {
 
 .imagen-redes {
     width: 2.8125rem;
+}
+
+.imagen-redes:hover{
+    width: 3rem;
 }
 
 .footer-copyright {
@@ -863,12 +896,20 @@ main {
     padding-top: .625rem;
 }
 
+.examen-1:hover {
+    background-color: #494860;
+}
+
 .examen-2 {
     grid-area: examen2;
     height: 100%;
     background-color: #1b2031;
     border-radius: 1.875rem;
     padding-top: .625rem;
+}
+
+.examen-2:hover {
+    background-color: #494860;
 }
 
 .titulo-examen-1 {
@@ -995,6 +1036,10 @@ main {
 
 }
 
+.imagen-manual-2023 img:hover {
+    width: 72%;
+}
+
 .descripcion-manual-2023 h2 {
     font-family: 'DM Sans', sans-serif;
     font-style: none;
@@ -1044,6 +1089,10 @@ main {
     width: 70%;
     margin: 20%;
 
+}
+
+.imagen-formulario-2023 img:hover {
+    width: 72%;
 }
 
 .descripcion-formulario-2023 h2 {
