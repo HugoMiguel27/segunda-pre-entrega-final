@@ -15,7 +15,11 @@ header {
 
 		img {
 			height: 5rem;
+			
 		}
+		img:hover{
+            transform: scale(1.1);
+        }
 	}
 
 	.nav-cursos {
@@ -31,6 +35,10 @@ header {
 			list-style: none;
 				a:visited {
 					color: #bababa;
+				}
+				a:hover{
+					font-size: 1.3125rem;
+					color: white;
 				}
 		}
 			

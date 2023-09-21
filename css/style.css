@@ -30,6 +30,9 @@ header .logo-esquina {
 header .logo-esquina img {
   height: 5rem;
 }
+header .logo-esquina img:hover {
+  transform: scale(1.1);
+}
 header .nav-cursos ul {
   display: flex;
   justify-content: end;
@@ -43,6 +46,10 @@ header .nav-cursos ul {
 }
 header .nav-cursos ul a:visited {
   color: #bababa;
+}
+header .nav-cursos ul a:hover {
+  font-size: 1.3125rem;
+  color: white;
 }
 
 main {
@@ -87,6 +94,11 @@ main .primera-seccion .segunda-seccion {
 }
 main .primera-seccion .segunda-seccion img {
   width: 60%;
+  animation-name: efecto_doctor;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 0.1ms;
 }
 main .contenedor-de-fotos {
   background-color: #212429;
@@ -105,6 +117,9 @@ main .contenedor-de-fotos .fotos-personas {
   display: flex;
   justify-content: center;
   gap: 3.75rem;
+}
+main .contenedor-de-fotos .fotos-personas img:hover {
+  transform: scale(1.2);
 }
 main .contenedor-de-fotos .fotos-personas .persona {
   position: relative;
@@ -178,6 +193,7 @@ main .contenedor-dedicacion .dedicacion-parrafo {
 }
 
 footer {
+  padding-top: 1.875rem;
   background-color: black;
 }
 footer .section-footer {
@@ -190,7 +206,43 @@ footer .section-footer .imagen-redes {
   width: 2.8125rem;
 }
 footer .section-footer .imagen-redes:hover {
-  width: 3.125rem;
+  transform: scale(1.2);
+}
+footer .lista-opiniones {
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9375rem;
+  color: #474e56;
+  list-style: none;
+  justify-content: center;
+  gap: 0.9375rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+footer .lista-opiniones a:visited {
+  color: #474e56;
+}
+footer .lista-opiniones a:hover {
+  color: white;
+}
+footer .copyright {
+  color: #474e56;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 0.9375rem;
+}
+
+@keyframes efecto_doctor {
+  0% {
+    width: 50%;
+    transition: rotate 20deg;
+  }
+  90% {
+    width: 60%;
+    transition: rotate 0deg;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

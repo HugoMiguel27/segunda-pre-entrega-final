@@ -38,6 +38,11 @@ main {
                 justify-content: center;
                 img {
                     width: 60%;
+                    animation-name: efecto_doctor;
+                    animation-iteration-count: 1;
+                    animation-timing-function: ease-in;
+                    animation-duration: 0.5s;
+                    animation-delay: 0.1ms
                 }
             }
         }
@@ -57,6 +62,9 @@ main {
                 display: flex;
                 justify-content: center;
                 gap: 3.75rem;
+                img:hover{
+                    transform: scale(1.2);
+                }
                 .persona{
                     position: relative;
                     display: inline-block;

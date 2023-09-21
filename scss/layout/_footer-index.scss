@@ -1,5 +1,6 @@
 
 footer{
+    padding-top: 1.875rem;
     background-color: black;
     .section-footer{
         display: flex;
@@ -10,8 +11,32 @@ footer{
             width: 2.8125rem;
         }
         .imagen-redes:hover{
-            width: 3.125rem;
+            transform: scale(1.2);
         }
     }
-
-}   
+    .lista-opiniones{
+        display: flex;
+        font-family: 'DM Sans', sans-serif;
+        font-size: .9375rem;
+        color: #474e56;
+        list-style: none;
+        justify-content: center;
+        gap: .9375rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        a:visited{
+            color: #474e56;
+        }
+        a:hover{
+            color: white;
+        }
+    }
+    .copyright {
+        color: #474e56;
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        font-size: .9375rem;
+    }
+}
