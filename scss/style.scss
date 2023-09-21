@@ -2,7 +2,11 @@
 @import "./utilities/mixins";
 @import "./base/reset";
 @import "./base/tipografias";
-@import "./base/header";
+@import "./layout/header-index";
 @import "./layout/main-index";
 @import "./layout/footer-index";
 @import "./utilities/keyframes";
+@import "./layout/media320";
+@import "./layout/media420";
+@import "./layout/media768";
+@import "./layout/media1024";

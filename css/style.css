@@ -61,31 +61,31 @@ main .primera-seccion {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 32.0625rem;
-  grid-template-areas: ". tituloprincipal descripcion .";
+  grid-template-areas: "tituloprincipal descripcion";
   padding-top: 4rem;
   padding-bottom: 11.25rem;
 }
 main .primera-seccion .titulo-principal {
   grid-area: tituloprincipal;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand";
   color: white;
   font-size: 4.6875rem;
   font-weight: 700;
-  text-align: end;
   padding-top: 3.75rem;
   padding-right: 1.5625rem;
+  text-align: end;
   width: 100%;
 }
 main .primera-seccion .descripcion-orient {
   grid-area: descripcion;
-  font-size: x-large;
+  font-family: "DM Sans";
   color: white;
-  text-align: start;
-  padding-top: 1.875rem;
-  font-family: "DM Sans", sans-serif;
-  text-align: end;
+  font-size: x-large;
+  font-weight: 500;
   padding-top: 3.75rem;
   padding-right: 1.5625rem;
+  text-align: end;
+  width: 100%;
 }
 main .primera-seccion .segunda-seccion {
   display: flex;
@@ -97,7 +97,7 @@ main .primera-seccion .segunda-seccion img {
   animation-name: efecto_doctor;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-delay: 0.1ms;
 }
 main .contenedor-de-fotos {
@@ -150,9 +150,9 @@ main .contenedor-surgimiento {
 }
 main .contenedor-surgimiento .surgimiento {
   font-family: "Quicksand", sans-serif;
+  color: #ffa200;
   text-align: center;
   font-size: 2.5rem;
-  color: #ffa200;
   font-weight: 700;
   padding-bottom: 6.25rem;
 }
@@ -161,6 +161,7 @@ main .contenedor-surgimiento .surgimiento-parrafo {
   color: white;
   text-align: center;
   font-size: 1.5625rem;
+  font-weight: 400;
   justify-content: center;
   padding: 5% 5%;
   border: 1px solid #ffa200;
@@ -174,9 +175,9 @@ main .contenedor-dedicacion {
 }
 main .contenedor-dedicacion .pregunta-dedicacion {
   font-family: "Quicksand", sans-serif;
+  color: #ffa200;
   text-align: center;
   font-size: 2.5rem;
-  color: #ffa200;
   font-weight: 700;
   padding-bottom: 6.25rem;
 }
@@ -185,6 +186,7 @@ main .contenedor-dedicacion .dedicacion-parrafo {
   color: white;
   text-align: center;
   font-size: 1.5625rem;
+  font-weight: 400;
   justify-content: center;
   padding: 5% 5%;
   border: 1px solid #ffa200;
@@ -242,6 +244,109 @@ footer .copyright {
   90% {
     width: 60%;
     transition: rotate 0deg;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    height: auto;
+    padding-bottom: 3.125rem;
+  }
+  header .barra-de-navegacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  header .logo-esquina {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  header .logo-esquina img {
+    height: 7.5rem;
+  }
+  header .nav-cursos ul {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1.875rem;
+    padding-right: 20%;
+    padding-left: 34%;
+    text-align: start;
+    font-size: 1.5625rem;
+    gap: 2.5rem;
+  }
+  main .primera-seccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: none;
+    gap: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+  main .primera-seccion .titulo-principal {
+    text-align: center;
+    font-size: 2.8125rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+  main .primera-seccion .descripcion-orient {
+    text-align: center;
+    font-size: 1.5625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  main .primera-seccion .segunda-seccion img {
+    width: 90%;
+  }
+  main .contenedor-de-fotos {
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-de-fotos div .titulo-pregunta {
+    margin: 0 5%;
+  }
+  main .contenedor-de-fotos .fotos-personas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1.875rem;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona img {
+    width: 95%;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona div h5 {
+    bottom: 14%;
+  }
+  main .contenedor-surgimiento {
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-surgimiento .surgimiento {
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-surgimiento .surgimiento-parrafo {
+    margin: 0 5%;
+    font-size: 1.125rem;
+  }
+  main .contenedor-dedicacion {
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-dedicacion .pregunta-dedicacion {
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-dedicacion .dedicacion-parrafo {
+    margin: 0 5%;
+    font-size: 1.125rem;
+  }
+  footer {
+    padding-top: 3rem;
+  }
+  footer .lista-opiniones {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.375rem;
+    padding-top: 2.1875rem;
+  }
+  footer .copyright {
+    padding-top: 2.1875rem;
   }
 }
 

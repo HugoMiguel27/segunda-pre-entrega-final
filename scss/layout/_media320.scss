@@ -1,0 +1,132 @@
+@media (max-width: 320px) {
+    header {
+        height: auto;
+        padding-bottom: 3.125rem;
+
+        .barra-de-navegacion {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+
+        }
+
+        .logo-esquina {
+            margin: 0 auto;
+            padding-left: 0;
+            ;
+        }
+
+        .logo-esquina img {
+            height: 7.5rem;
+        }
+
+        .nav-cursos ul {
+            flex-direction: column;
+            margin: 0 auto;
+            padding-top: 1.875rem;
+            padding-right: 20%;
+            padding-left: 34%;
+            text-align: start;
+            font-size: 1.5625rem;
+            gap: 2.5rem;
+        }
+    }
+
+    main {
+        .primera-seccion {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: none;
+            gap: 3.125rem;
+            padding-bottom: 3.125rem;
+            
+
+            .titulo-principal {
+                text-align: center;
+                font-size: 2.8125rem;
+                padding-left: .625rem;
+                padding-right: .625rem;
+
+            }
+
+            .descripcion-orient {
+                text-align: center;
+                font-size: 1.5625rem;
+                padding-left: 1.25rem;
+                padding-right: 1.25rem;
+            }
+
+            .segunda-seccion {
+                img {
+                    width: 90%;
+                }
+            }
+        }
+
+        .contenedor-de-fotos {
+            padding-bottom: 3.125rem;
+
+            div {
+                .titulo-pregunta {
+                    margin: 0 5%;
+                }
+            }
+
+            .fotos-personas {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, auto);
+                gap: 1.875rem;
+
+                .persona {
+                    img {
+                        width: 95%;
+                    }
+
+                    div {
+                        h5 {
+                            bottom: 14%;
+                        }
+                    }
+
+
+                }
+            }
+        }
+        .contenedor-surgimiento{
+            padding-top: 6.25rem;
+            padding-bottom: 3.125rem;
+            .surgimiento{
+                padding-bottom: 3.125rem;
+            }
+            .surgimiento-parrafo{
+                margin: 0 5%;
+                font-size: 1.125rem;
+            }
+        }
+        .contenedor-dedicacion{
+            padding-top: 6.25rem;
+            padding-bottom: 3.125rem;
+            .pregunta-dedicacion{
+                padding-bottom: 3.125rem;
+            }
+            .dedicacion-parrafo{
+                margin: 0 5%;
+                font-size: 1.125rem;
+            }
+        }
+    }
+    footer{
+        padding-top: 3rem;
+        .lista-opiniones{
+            flex-direction: column;
+            text-align: center;
+            gap: 1.375rem;
+            padding-top: 2.1875rem;
+        }
+        .copyright{
+            padding-top: 2.1875rem;
+        }
+    }   
+}

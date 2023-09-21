@@ -1,0 +1,11 @@
+@mixin presentacion ($area, $fuente, $color, $sizefont, $weightfont, $toppadding, $rightpadding, $aligntext, $width){
+    grid-area: $area;
+    font-family: $fuente;
+    color: $color;
+    font-size: $sizefont;
+    font-weight: $weightfont;
+    padding-top: $toppadding;
+    padding-right:$rightpadding;
+    text-align: $aligntext;
+    width: $width;
+}
