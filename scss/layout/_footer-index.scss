@@ -1,0 +1,17 @@
+
+footer{
+    background-color: black;
+    .section-footer{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        gap: 2.5rem;
+        .imagen-redes{
+            width: 2.8125rem;
+        }
+        .imagen-redes:hover{
+            width: 3.125rem;
+        }
+    }
+
+}   

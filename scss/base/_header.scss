@@ -1,0 +1,38 @@
+header {
+	width: 100%;
+	background-color: #212429;
+	height: 8.75rem;
+
+	.barra-de-navegacion {
+		display: grid;
+		grid-template-columns: 25% 75%;
+		grid-template-rows: 9.375rem;
+	}
+
+	.logo-esquina {
+		padding-top: 1.5rem;
+		padding-left: 3rem;
+
+		img {
+			height: 5rem;
+		}
+	}
+
+	.nav-cursos {
+		ul {
+			display: flex;
+			justify-content: end;
+			padding-right: 4rem;
+			padding-top: 3.125rem;
+			font-family: 'Quicksand', sans-serif;
+			font-size: 1.25rem;
+			font-weight: 700;
+			gap: 3.75rem;
+			list-style: none;
+				a:visited {
+					color: #bababa;
+				}
+		}
+			
+	}
+}

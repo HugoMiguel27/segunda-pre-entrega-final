@@ -1,0 +1,135 @@
+main {
+    background-color: black;
+    place-items: center;
+    width: 100%;
+        .primera-seccion{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 32.0625rem;
+            grid-template-areas: ". tituloprincipal descripcion .";
+            padding-top: 4rem;
+            padding-bottom: 11.25rem;
+            
+            .titulo-principal{
+                grid-area: tituloprincipal;
+                font-family: 'Quicksand', sans-serif;
+                color: white;
+                font-size: 4.6875rem;
+                font-weight: 700;
+                text-align: end;
+                padding-top: 3.75rem;
+                padding-right: 1.5625rem;
+                width: 100%;
+            }
+            .descripcion-orient{
+                grid-area: descripcion;
+                font-size: x-large;
+                color: white;
+                text-align: start;
+                padding-top: 1.875rem;
+                font-family: 'DM Sans', sans-serif;
+                text-align: end;
+                padding-top: 3.75rem;
+                padding-right: 1.5625rem;
+            }
+            .segunda-seccion{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 60%;
+                }
+            }
+        }
+        .contenedor-de-fotos{
+            background-color: #212429;
+            padding-top: 6.25rem;
+            padding-bottom: 9.375rem;
+            .titulo-pregunta{
+                font-family: 'Quicksand', sans-serif;
+                padding-bottom: 6.25rem;
+                text-align: center;
+                font-size: 2.5rem;
+                color: #ffa200;
+                font-weight: 700;
+            }
+            .fotos-personas{
+                display: flex;
+                justify-content: center;
+                gap: 3.75rem;
+                .persona{
+                    position: relative;
+                    display: inline-block;
+                    text-align: center;
+                    div{
+                        h5{
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 1.125rem;
+                            color: white;
+                            position: absolute;
+                            bottom: 8%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                        }
+                        p{
+                            font-family: 'Quicksand', sans-serif;
+                            font-size: .875rem;
+                            color: white;
+                            position: absolute;
+                            bottom: 0%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+        .contenedor-surgimiento{
+            padding-top: 12.5rem;
+            padding-bottom: 9.375rem;
+            .surgimiento {
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                font-size: 2.5rem;
+                color: #ffa200;
+                font-weight: 700;
+                padding-bottom: 6.25rem;
+            }
+            .surgimiento-parrafo {
+                font-family: 'Quicksand', sans-serif;
+                color: white;
+                text-align: center;
+                font-size: 1.5625rem;
+                justify-content: center;
+                padding: 5% 5%;
+                border:1px solid #ffa200;
+                border-radius: 1.875rem;
+                margin: 0 25%;
+            }
+        }
+        .contenedor-dedicacion{
+            padding-top: 12.5rem;
+            padding-bottom: 9.375rem;
+            background-color:#212429;
+            .pregunta-dedicacion{
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                font-size: 2.5rem;
+                color: #ffa200;
+                font-weight: 700;
+                padding-bottom: 6.25rem;
+            }
+            .dedicacion-parrafo{
+                font-family: 'Quicksand', sans-serif;
+                color: white;
+                text-align: center;
+                font-size: 1.5625rem;
+                justify-content: center;
+                padding: 5% 5%;
+                border:1px solid #ffa200;
+                border-radius: 1.875rem;
+                margin: 0 25%;
+            }
+        }
+    }

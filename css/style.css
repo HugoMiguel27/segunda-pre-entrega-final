@@ -1,1397 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Quicksand', sans-serif;
 
 */
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-.lista-opiniones a:visited {
-    color: #474e56;
-    text-decoration: none;
-}
-
-/***************************INDEX.HTML*********************************/
-body {
-    background-color: white;
-}
-
-/*header*/
 header {
-    height: 8.75rem;
+  width: 100%;
+  background-color: #212429;
+  height: 8.75rem;
 }
-
-header a img {
-    width: 5rem;
+header .barra-de-navegacion {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 9.375rem;
 }
-
-ul {
-    list-style: none;
+header .logo-esquina {
+  padding-top: 1.5rem;
+  padding-left: 3rem;
 }
-
-nav ul a {
-    width: 100%;
-    text-decoration: none;
-    color: #bababa;
-    font-size: 1.25rem;
-    font-weight: 500;
+header .logo-esquina img {
+  height: 5rem;
 }
-
-/*main*/
-.titulo-principal {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-size: 4.6875rem;
-    font-weight: 700;
-    text-align: start;
-    padding-top: 2.5rem;
-    width: 100%;
+header .nav-cursos ul {
+  display: flex;
+  justify-content: end;
+  padding-right: 4rem;
+  padding-top: 3.125rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  gap: 3.75rem;
+  list-style: none;
 }
-
-.imagen-quimico {
-    width: 60%;
+header .nav-cursos ul a:visited {
+  color: #bababa;
 }
-
-.pregunta {
-    text-align: center;
-}
-
-.texto-carta {
-    font-family: 'Quicksand', sans-serif;
-    color: black;
-    font-size: 1.25rem;
-    font-weight: 300;
-    text-align: center;
-}
-
-.primera-seccion {
-    padding-bottom: 9.375rem;
-}
-
-.descripcion-orient {
-    font-size: x-large;
-    color: white;
-    text-align: start;
-    padding-top: 1.875rem;
-}
-
-.contenedor-de-fotos {
-    padding: 6.25rem 0;
-}
-
-.titulo-pregunta {
-    font-family: 'Quicksand', sans-serif;
-    padding-top: 25rem;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #ffa200;
-    font-weight: 700;
-}
-
-.contenedor-surgimiento {
-    padding-top: 12.5rem;
-    padding-bottom: 9.375rem;
-}
-
-.surgimiento {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #ffa200;
-    font-weight: 700;
-    padding-top: 15.625rem;
-}
-
-.surgimiento-parrafo {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-size: 1.5625rem;
-    justify-content: center;
-    padding-top: 1.25rem
-}
-
-.contenedor-dedicacion {
-    padding-top: 9.375rem;
-    padding-bottom: 9.375rem;
-}
-
-.pregunta-dedicacion {
-    font-family: 'Quicksand', sans-serif;
-    padding-top: 12.5rem;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #ffa200;
-    font-weight: 700;
-}
-
-.dedicacion-parrafo {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-size: 1.5625rem;
-    padding-top: 1.25rem;
-}
-
-.texto-footer {
-    font-family: 'DM Sans', sans-serif;
-    font-size: .9375rem;
-}
-
-/*footer*/
-
-
-
-
-/***************************CURSOS.HTML*********************************/
-
-
-/*header*/
-
-header {
-    width: 100%;
-    background-color: #212429;
-}
-
-.barra-de-navegacion {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 9.375rem;
-}
-
-.logo-esquina {
-    padding-top: 1.5rem;
-    padding-left: 3rem;
-}
-
-.nav-cursos ul {
-    display: flex;
-    justify-content: end;
-    padding-right: 4rem;
-    padding-top: 3.125rem;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    gap: 2.75rem;
-}
-
-/*main*/
 
 main {
-    background-color: black;
-}
-
-.titulos-superiores {
-    padding-left: 11.25rem;
-    padding-top: 6.25rem;
-}
-
-.titulos-superiores h2 {
-    color: orange;
-    font-size: 1.875rem;
-    font-family: 'Quicksand', sans-serif;
-    text-align: start;
-}
-
-.titulos-superiores h1 {
-    color: white;
-    font-size: 3.125rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-align: start;
-}
-
-.imagen-profesion {
-    width: 90%;
-    margin: 0 5%;
-}
-
-.section-grids {
-    display: grid;
-    grid-template-columns: auto 21% 21% 21% auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". medicina  administración diseño . ";
-    width: 100%;
-    align-items: center;
-    padding-top: 6.25rem;
-    padding-bottom: 3.125rem;
-    gap: 3.4375rem;
-}
-
-.tarjeta-medicina {
-    grid-area: medicina;
-    height: 100%;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    padding-top: .625rem;
-}
-
-.tarjeta-medicina a:visited {
-    text-decoration: none;
-}
-
-.tarjeta-medicina:hover {
-    background-color: #3f444e;
-    height: 98%;
-}
-
-.tarjeta-administracion {
-    grid-area: administración;
-    height: 100%;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    padding-top: .625rem;
-}
-
-.tarjeta-administracion:hover {
-    background-color: #3f444e;
-    height: 98%;
-}
-
-.tarjeta-diseño {
-    grid-area: diseño;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    height: 100%;
-    padding-top: .625rem;
-}
-
-.tarjeta-diseño:hover {
-    background-color: #3f444e;
-    height: 98%;
-}
-
-.titulo-tarjeta-medicina {
-    color: white;
-    color: #1d60e9;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.parrafo-superior-medicina {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-align: center;
-    font-style: normal;
-    padding-bottom: .625rem;
-}
-
-.titulo-tarjeta-administracion {
-    color: white;
-    color: green;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.parrafo-superior-administracion {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-align: center;
-    font-style: normal;
-    padding-bottom: .625rem;
-}
-
-.titulo-tarjeta-diseño {
-    color: white;
-    color: orange;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.parrafo-superior-diseño {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-align: center;
-    font-style: normal;
-    padding-bottom: .625rem;
-}
-
-.disponible-tarjeta {
-    color: orange;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.875rem;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 1.25rem;
-}
-
-.descripcion-tarjeta {
-    color: #9d9d9d;
-    font-family: 'Quicksand', sans-serif;
-    font-size: medium;
-    text-align: center;
-    font-weight: 500;
-    padding: 1.25rem .9375rem;
-}
-
-.lista-de-contenido {
-    color: #b0b0b0;
-    font-family: 'Quicksand', sans-serif;
-    font-size: large;
-    font-weight: 700;
-    text-align: left;
-    text-decoration: none;
-    padding-left: 2.5rem;
-    padding-bottom: 1.875rem;
-}
-
-.lista-de-contenido a:visited {
-    color: #b0b0b0;
-    text-decoration: none;
-}
-
-.registro {
-    padding-left: 180px;
-    padding-bottom: 9.375rem;
-}
-
-.titulo-registro {
-    font-size: larger;
-    color: orange;
-    font-weight: bolder;
-    font-family: 'DM Sans', sans-serif;
-}
-
-.instruccion-registro {
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.otros-cursos {
-    padding-left: 11.25rem;
-    padding-top: 6.25rem;
-    padding-right: 75rem;
-}
-
-.otros-cursos h1 {
-    color: white;
-    font-size: 3.125rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-align: start;
-}
-
-.imagen-profesion {
-    width: 90%;
-    margin: 0 5%;
-}
-
-.section-grids-2 {
-    display: grid;
-    grid-template-columns: auto 21% 21% 21% auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". ingenieria arquitectura programacion . ";
-    width: 100%;
-    align-items: center;
-    padding-top: 6.25rem;
-    padding-bottom: 12.5rem;
-    gap: 3.4375rem;
-}
-
-.tarjeta-ingenieria {
-    grid-area: ingenieria;
-    height: 100%;
-    background-color: #1d60e9;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    padding-top: .625rem;
-}
-
-.tarjeta-ingenieria:hover {
-    background-color: #494860;
-    height: 98%;
-}
-
-.tarjeta-arquitectura {
-    grid-area: arquitectura;
-    height: 100%;
-    background-color: #912e0e;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    padding-top: .625rem;
-}
-
-.tarjeta-arquitectura:hover {
-    background-color: #494860;
-    height: 98%;
-}
-
-
-.tarjeta-programacion {
-    grid-area: programacion;
-    background-color: #c65400;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    height: 100%;
-    padding-top: .625rem;
-}
-
-.tarjeta-programacion:hover {
-    background-color: #494860;
-    height: 98%;
-}
-
-
-.titulo-tarjeta-ingenieria {
-    color: white;
-    color: #1d60e9;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.parrafo-superior-ingenieria {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-align: center;
-    font-style: normal;
-    padding-bottom: .625rem;
-}
-
-.titulo-tarjeta-arquitectura {
-    color: white;
-    color: green;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.parrafo-superior-arquitectura {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-align: center;
-    font-style: normal;
-    padding-bottom: .625rem;
-}
-
-.titulo-tarjeta-programacion {
-    color: white;
-    color: orange;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.parrafo-superior-programacion {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-align: center;
-    font-style: normal;
-    padding-bottom: .625rem;
-}
-
-.disponible-tarjeta {
-    color: orange;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.875rem;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 1.25rem;
-}
-
-.descripcion-tarjeta {
-    color: #9d9d9d;
-    font-family: 'Quicksand', sans-serif;
-    font-size: medium;
-    text-align: center;
-    font-weight: 500;
-    padding: 1.25rem .9375rem;
-}
-
-.lista-de-contenido {
-    color: #b0b0b0;
-    font-family: 'Quicksand', sans-serif;
-    font-size: large;
-    font-weight: 700;
-    text-align: left;
-    padding-left: 2.5rem;
-    padding-bottom: 1.875rem;
-}
-
-/*footer*/
-
-.section-footer {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    gap: 2.5rem;
-}
-
-.imagen-redes {
-    width: 2.8125rem;
-}
-
-.imagen-redes:hover{
-    width: 3rem;
-}
-
-.footer-copyright {
-    background-color: black;
-}
-
-.lista-opiniones {
-    display: flex;
-    font-family: 'DM Sans', sans-serif;
-    font-size: .9375rem;
-    color: #474e56;
-    text-decoration: none;
-    justify-content: center;
-    gap: .9375rem;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    border-bottom: .0625rem;
-    margin-bottom: 1rem;
-}
-
-.copyright {
-    color: #474e56;
-    text-align: center;
-    font-family: 'DM Sans', sans-serif;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-}
-
-/*******************media************/
-
-/*media 1024*/
-
-@media (max-width: 1024px) {
-
-    .titulos-superiores {
-        padding-left: 7.5rem;
-    }
-
-    .registro {
-        padding-left: 7.5rem;
-        margin-right: 7.5rem;
-    }
-
-    .section-grids {
-        grid-template-columns: auto 24% 24% 24% auto;
-        gap: 1.25rem;
-    }
-
-    .otros-cursos {
-        padding-left: 7.5rem;
-    }
-
-    .section-grids-2 {
-        grid-template-columns: auto 24% 24% 24% auto;
-        gap: 1.25rem;
-    }
-
-    .parrafo-superior-ingenieria {
-        padding: 0 .625rem;
-    }
-
-    .parrafo-superior-arquitectura {
-        padding: 0 .625rem;
-    }
-
-    .parrafo-superior-programacion {
-        padding: 0 .625rem;
-    }
-
-
-}
-
-
-
-/*media 768*/
-@media (max-width: 768px) {
-    .nav-cursos ul {
-        gap: 1.25rem;
-        padding-right: 1.875rem;
-    }
-
-    .disponible-tarjeta {
-        padding: 0 .625rem;
-    }
-
-    .tarjeta-administracion {
-        width: 11.875rem;
-    }
-
-    .tarjeta-diseño {
-        width: 11.875rem;
-    }
-
-    .tarjeta-medicina {
-        width: 11.875rem;
-    }
-
-
-    .titulos-superiores {
-        padding-left: 5.625rem;
-    }
-
-    .titulo-tarjeta-medicina {
-        font-size: 1.25rem;
-    }
-
-    .titulo-tarjeta-administracion {
-        font-size: 1.25rem;
-    }
-
-    .titulo-tarjeta-diseño {
-        font-size: 1.25rem;
-    }
-
-    .titulo-tarjeta-arquitectura {
-        font-size: 1.25rem;
-    }
-
-    .titulo-tarjeta-programacion {
-        font-size: 1.25rem;
-    }
-
-    .titulo-tarjeta-ingenieria {
-        font-size: 1.25rem;
-    }
-
-    .parrafo-superior-administracion {
-        font-size: 1.125rem;
-    }
-
-    .parrafo-superior-arquitectura {
-        font-size: 1.125rem;
-    }
-
-    .parrafo-superior-diseño {
-        font-size: 1.125rem;
-    }
-
-    .parrafo-superior-ingenieria {
-        font-size: 1.125rem;
-    }
-
-    .parrafo-superior-medicina {
-        font-size: 1.125rem;
-    }
-
-    .parrafo-superior-programacion {
-        font-size: 1.125rem;
-    }
-
-    .registro {
-        padding-left: 5.625rem;
-    }
-
-    .otros-cursos {
-        padding-left: 5.625rem;
-    }
-
-    .disponible-tarjeta {
-        font-size: 1.375rem;
-    }
-
-    .lista-de-contenido {
-        padding-left: 1.25rem;
-    }
-}
-
-/*media 320*/
-@media (max-width: 320px) {
-    .section-grids {
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: repeat(3, auto);
-        align-content: center;
-    }
-
-    .titulos-superiores {
-        padding: 2.5rem 5% 0 5%;
-    }
-
-    .tarjeta-medicina {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 100%;
-        margin: 0 5%;
-    }
-
-    .tarjeta-administracion {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 100%;
-        margin: 0 5%;
-    }
-
-    .tarjeta-diseño {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 100%;
-        margin: 0 5%;
-    }
-
-    .registro {
-        padding: 2.5rem 5% 4.375rem 5%;
-        margin-right: 0;
-    }
-
-    .otros-cursos {
-        padding: 2.5rem 5% 0 5%;
-    }
-
-
-    .section-grids-2 {
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: repeat(3, auto);
-        align-content: center;
-        padding-bottom: 12.5rem;
-    }
-
-    .tarjeta-ingenieria {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 100%;
-        margin: 0 5%;
-    }
-
-    .tarjeta-arquitectura {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 100%;
-        margin: 0 5%;
-    }
-
-    .tarjeta-programacion {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 100%;
-        margin: 0 5%;
-    }
-
-    header {
-        height: 21.875rem;
-    }
-
-    .nav-cursos ul {
-        flex-direction: column;
-        padding-top: 9.375rem;
-        justify-self: start;
-        width: 100%;
-        justify-content: start;
-        text-align: start;
-        gap: 1.25rem;
-    }
-
-    .logo-esquina {
-        padding-left: 7.5rem;
-    }
-
-    .lista-opiniones {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/***************************EXÁMENES.HTML*********************************/
-
-
-/************header****************/
-
-/************main****************/
-.titulos-superiores-examenes {
-    padding-left: 11.25rem;
-    padding-top: 6.25rem;
-    padding-bottom: 7.5rem;
-}
-
-.titulos-superiores-examenes h2 {
-    color: orange;
-    font-size: 1.875rem;
-    font-family: 'Quicksand', sans-serif;
-    text-align: start;
-
-}
-
-.titulos-superiores-examenes h1 {
-    color: white;
-    font-size: 3.125rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-align: start;
-}
-
-.titulo {
-    padding-bottom: 6.25rem;
-    padding-left: 11.25rem;
-}
-
-.titulo-examenes {
-    font-size: x-large;
-    color: orange;
-    font-weight: bolder;
-    font-family: 'DM Sans', sans-serif;
-}
-
-.imagen-examen {
-    width: 70%;
-    justify-self: center;
-    margin: 0 15%;
-}
-
-.section-grids-3 {
-    display: grid;
-    grid-template-columns: auto 25% 25% auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". examen1 examen2 . ";
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 6.25rem;
-    gap: 5rem;
-}
-
-.examen-1 {
-    grid-area: examen1;
-    height: 100%;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    padding-top: .625rem;
-}
-
-.examen-1:hover {
-    background-color: #494860;
-}
-
-.examen-2 {
-    grid-area: examen2;
-    height: 100%;
-    background-color: #1b2031;
-    border-radius: 1.875rem;
-    padding-top: .625rem;
-}
-
-.examen-2:hover {
-    background-color: #494860;
-}
-
-.titulo-examen-1 {
-    color: white;
-    color: #1d60e9;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.titulo-examen-2 {
-    color: white;
-    color: green;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: underline;
-    font-size: 1.5625rem;
-    text-align: center;
-    padding-bottom: .625rem;
-}
-
-.disponible-tarjeta-examen {
-    color: orange;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.875rem;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 1.25rem;
-}
-
-.descripcion-tarjeta-examen {
-    color: #9d9d9d;
-    font-family: 'Quicksand', sans-serif;
-    font-size: medium;
-    text-align: center;
-    font-weight: 500;
-    padding: 1.25rem .9375rem;
-}
-
-.lista-de-contenido-examen {
-    color: #b0b0b0;
-    font-family: 'Quicksand', sans-serif;
-    font-size: large;
-    font-weight: 700;
-    text-align: left;
-    padding-left: 2.5rem;
-    padding-bottom: 1.875rem;
-}
-
-.section-dudas {
-    padding-left: 180px;
-    padding-bottom: 9.375rem;
-}
-
-.titulo-dudas {
-    font-size: larger;
-    color: orange;
-    font-weight: bolder;
-    font-family: 'DM Sans', sans-serif;
-}
-
-.instruccion-dudas {
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    font-family: 'Quicksand', sans-serif;
-}
-
-/************footer****************/
-
-/*******************media************/
-
-
-
-
-/*******************************MATERIAL.HTML********************/
-
-/*************header************/
-
-/*************main***************/
-
-.titulos-superiores-material {
-    padding-left: 11.25rem;
-    padding-top: 6.25rem;
-    padding-bottom: 7.5rem;
-}
-
-.titulos-superiores-material h2 {
-    color: orange;
-    font-size: 1.875rem;
-    font-family: 'Quicksand', sans-serif;
-    text-align: start;
-}
-
-.titulos-superiores-material h1 {
-    color: white;
-    font-size: 3.125rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-align: start;
-}
-
-.manual-2023 {
-    display: grid;
-    grid-template-columns: auto 25% 40% auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". manual2023 descripcion .";
-}
-
-.imagen-manual-2023 {
-    grid-area: manual2023;
-}
-
-.descripcion-manual-2023 {
-    grid-area: descripcion;
-}
-
-.imagen-manual-2023 img {
-    width: 70%;
-    margin: 20%;
-
-}
-
-.imagen-manual-2023 img:hover {
-    width: 72%;
-}
-
-.descripcion-manual-2023 h2 {
-    font-family: 'DM Sans', sans-serif;
-    font-style: none;
-    font-size: 1.875rem;
-    color: orange;
-    text-align: center;
-    padding-bottom: 2.5rem;
-    margin-top: 20%;
-}
-
-.p-1-manual {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-style: none;
-    font-size: 1.25rem;
-    text-align: center;
-}
-
-.p-2-manual {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-style: none;
-    font-size: 1.25rem;
-    text-align: center;
-    margin-bottom: 20%;
-}
-
-
-
-.formulario-2023 {
-    display: grid;
-    grid-template-columns: auto 25% 40% auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". formulario2023 descripcionformulario .";
-    padding-bottom: 12.5rem;
-}
-
-.imagen-formulario-2023 {
-    grid-area: formulario2023;
-}
-
-.descripcion-formulario-2023 {
-    grid-area: descripcionformulario;
-}
-
-.imagen-formulario-2023 img {
-    width: 70%;
-    margin: 20%;
-
-}
-
-.imagen-formulario-2023 img:hover {
-    width: 72%;
-}
-
-.descripcion-formulario-2023 h2 {
-    font-family: 'DM Sans', sans-serif;
-    font-style: none;
-    font-size: 1.875rem;
-    color: orange;
-    text-align: center;
-    padding-bottom: 2.5rem;
-    margin-top: 20%;
-}
-
-.p-1-formulario {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-style: none;
-    font-size: 1.25rem;
-    text-align: center;
-}
-
-.p-2-formulario {
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-style: none;
-    font-size: 1.25rem;
-    text-align: center;
-    margin-bottom: 20%;
-}
-
-/************footer************/
-
-
-/*media 1024*/
-@media (max-width: 1024px) {
-    .titulos-superiores-material {
-        padding-left: 6.875rem;
-        padding-top: 6.25rem;
-        padding-bottom: 7.5rem;
-    }
-
-    .manual-2023 {
-        display: grid;
-        grid-template-columns: auto 35% 45% auto;
-    }
-
-    .imagen-manual-2023 img {
-        width: 90%;
-        margin: 0 10% 0 0;
-        padding-top: 35%;
-    }
-
-    .formulario-2023 {
-        display: grid;
-        grid-template-columns: auto 35% 45% auto;
-    }
-
-    .imagen-formulario-2023 img {
-        width: 90%;
-        margin: 0 10% 0 0;
-        padding-top: 27%;
-    }
-}
-
-
-/*media 768*/
-@media (max-width: 768px) {
-    .titulos-superiores-material {
-        padding-left: 5.3125rem;
-    }
-
-    .imagen-manual-2023 img {
-        width: 90%;
-        margin: 0 10% 0 0;
-        padding-top: 80%;
-    }
-
-    .imagen-formulario-2023 img {
-        width: 90%;
-        margin: 0 10% 0 0;
-        padding-top: 75%;
-    }
-}
-
-/*media 468*/
-
-/*media 320*/
-@media (max-width: 320px) {
-    .titulos-superiores-material {
-        padding: 2.5rem 5% 0 5%;
-    }
-
-    .manual-2023 {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, auto);
-        align-content: center;
-        padding-bottom: 12.5rem;
-    }
-
-    .imagen-manual-2023 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin: 0 5%;
-    }
-
-    .imagen-manual-2023 img {
-        width: 80%;
-        margin: 10%;
-    }
-
-    .descripcion-manual-2023 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin: 0 5%;
-    }
-
-    .formulario-2023 {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, auto);
-        align-content: center;
-        padding-bottom: 12.5rem;
-    }
-
-    .imagen-formulario-2023 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin: 0 5%;
-    }
-
-    .descripcion-formulario-2023 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin: 0 5%;
-    }
-
-    .imagen-formulario-2023 img {
-        width: 80%;
-        margin: 10%;
-
-    }
-}
-
-/****************************CONTACTO********************/
-
-/************header************/
-
-/************main*************/
-
-.titulos-superiores-contacto {
-    padding-left: 11.25rem;
-    padding-top: 5rem;
-    padding-bottom: 7.5rem;
-}
-
-.titulos-superiores-contacto h2 {
-    color: orange;
-    font-size: 1.875rem;
-    font-family: 'Quicksand', sans-serif;
-    text-align: start;
-}
-
-.titulos-superiores-contacto h1 {
-    color: white;
-    font-size: 3.125rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    text-align: start;
-}
-
-.medios-de-contacto {
-    display: grid;
-    grid-template-columns: auto 24% 25% 25% auto;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: ".    WhatsApp    CallCenter   CallCenter    ."
-        ".    Messenger   CallCenter   CallCenter    ."
-        ".    Teléfono    CallCenter   CallCenter    .";
-
-    place-items: center;
-    padding-bottom: 6.25rem;
-}
-
-.whatsapp-contacto {
-    display: flex;
-    grid-area: WhatsApp;
-    color: white;
-}
-
-.whatsapp-contacto button:hover {
-    background-color: #9ebcbf;
-}
-
-.whatsapp-contacto button {
-    background-color: #535353;
-    border-radius: 1.25rem;
-    box-shadow: none;
-    padding: .3125rem 2.5rem;
-}
-
-.whatsapp-contacto img {
-    width: 4.375rem;
-    padding-bottom: .625rem;
-}
-
-.whatsapp-contacto p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5625rem;
-    font-weight: 700;
-    color: orange;
-}
-
-.whatsapp-contacto p::first-letter {
-    color: white;
-    font-size: 1.875rem;
-}
-
-.messenger-contacto {
-    grid-area: Messenger;
-    color: white;
-}
-
-.messenger-contacto button:hover {
-    background-color: #9ebcbf;
-}
-
-.messenger-contacto button {
-    background-color: #535353;
-    border-radius: 1.25rem;
-    box-shadow: none;
-    padding: .3125rem 2.5rem;
-}
-
-.messenger-contacto img {
-    width: 4.375rem;
-    padding-bottom: .625rem;
-}
-
-.messenger-contacto p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5625rem;
-    font-weight: 700;
-    color: orange;
-}
-
-.messenger-contacto p::first-letter {
-    color: white;
-    font-size: 1.875rem;
-}
-
-.telefono-contacto {
-    grid-area: Teléfono;
-    color: white;
-}
-
-.telefono-contacto button:hover {
-    background-color: #9ebcbf;
-}
-
-.telefono-contacto button {
-    background-color: #535353;
-    border-radius: 1.25rem;
-    padding: .3125rem 2.5rem;
-}
-
-.telefono-contacto img {
-    width: 4.375rem;
-    padding-bottom: .625rem;
-}
-
-.telefono-contacto p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5625rem;
-    font-weight: 700;
-    color: orange;
-}
-
-.telefono-contacto p::first-letter {
-    color: white;
-    font-size: 1.875rem;
-}
-
-.callcenter-contacto {
-    grid-area: CallCenter;
-    color: white;
-}
-
-.callcenter-contacto img {
-    width: 31.25rem;
-}
-
-.recuerda {
-    color: #898989;
-    font-size: .9375rem;
-    font-family: 'Quicksand', sans-serif;
-    text-align: start;
-    padding-left: 11.25rem;
-    padding-bottom: 7.5rem;
-}
-
-
-
-/************footer************/
+  background-color: black;
+  place-items: center;
+  width: 100%;
+}
+main .primera-seccion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 32.0625rem;
+  grid-template-areas: ". tituloprincipal descripcion .";
+  padding-top: 4rem;
+  padding-bottom: 11.25rem;
+}
+main .primera-seccion .titulo-principal {
+  grid-area: tituloprincipal;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 4.6875rem;
+  font-weight: 700;
+  text-align: end;
+  padding-top: 3.75rem;
+  padding-right: 1.5625rem;
+  width: 100%;
+}
+main .primera-seccion .descripcion-orient {
+  grid-area: descripcion;
+  font-size: x-large;
+  color: white;
+  text-align: start;
+  padding-top: 1.875rem;
+  font-family: "DM Sans", sans-serif;
+  text-align: end;
+  padding-top: 3.75rem;
+  padding-right: 1.5625rem;
+}
+main .primera-seccion .segunda-seccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .primera-seccion .segunda-seccion img {
+  width: 60%;
+}
+main .contenedor-de-fotos {
+  background-color: #212429;
+  padding-top: 6.25rem;
+  padding-bottom: 9.375rem;
+}
+main .contenedor-de-fotos .titulo-pregunta {
+  font-family: "Quicksand", sans-serif;
+  padding-bottom: 6.25rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffa200;
+  font-weight: 700;
+}
+main .contenedor-de-fotos .fotos-personas {
+  display: flex;
+  justify-content: center;
+  gap: 3.75rem;
+}
+main .contenedor-de-fotos .fotos-personas .persona {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+main .contenedor-de-fotos .fotos-personas .persona div h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.125rem;
+  color: white;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .contenedor-de-fotos .fotos-personas .persona div p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .contenedor-surgimiento {
+  padding-top: 12.5rem;
+  padding-bottom: 9.375rem;
+}
+main .contenedor-surgimiento .surgimiento {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffa200;
+  font-weight: 700;
+  padding-bottom: 6.25rem;
+}
+main .contenedor-surgimiento .surgimiento-parrafo {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5625rem;
+  justify-content: center;
+  padding: 5% 5%;
+  border: 1px solid #ffa200;
+  border-radius: 1.875rem;
+  margin: 0 25%;
+}
+main .contenedor-dedicacion {
+  padding-top: 12.5rem;
+  padding-bottom: 9.375rem;
+  background-color: #212429;
+}
+main .contenedor-dedicacion .pregunta-dedicacion {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffa200;
+  font-weight: 700;
+  padding-bottom: 6.25rem;
+}
+main .contenedor-dedicacion .dedicacion-parrafo {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5625rem;
+  justify-content: center;
+  padding: 5% 5%;
+  border: 1px solid #ffa200;
+  border-radius: 1.875rem;
+  margin: 0 25%;
+}
+
+footer {
+  background-color: black;
+}
+footer .section-footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  gap: 2.5rem;
+}
+footer .section-footer .imagen-redes {
+  width: 2.8125rem;
+}
+footer .section-footer .imagen-redes:hover {
+  width: 3.125rem;
+}
+
+/*# sourceMappingURL=style.css.map */
