@@ -1,0 +1,74 @@
+@media (max-width: 1024px) {
+    main {
+        .primera-seccion {
+            padding-bottom: 100px;
+
+            .titulo-principal {
+                padding-right: 0;
+                margin-left: 2.5rem;
+                font-size: 55px;
+            }
+
+            .descripcion-orient {
+                padding-right: 0;
+                margin-left: 2.5rem;
+                padding-left: 20px;
+                font-size: 1.375rem;
+            }
+
+            .segunda-seccion {
+                img {
+                    width: 75%;
+                }
+            }
+        }
+
+        .contenedor-de-fotos {
+            .titulo-pregunta {
+                font-size: 2.1875rem;
+            }
+
+            .fotos-personas {
+                gap: .625rem;
+
+                img:hover {
+                    transform: scale(1.05);
+                }
+
+                img {
+                    width: 90%;
+                }
+
+                .persona {
+                    div {
+                        h5 {
+                            bottom: 13%;
+                            font-size: 100%;
+                        }
+                        p{
+                            font-size: 87%;
+                        }
+                    }
+                }
+            }
+        }
+        .contenedor-surgimiento{
+            padding-top: 5rem;
+            .surgimiento{
+                font-size: 2.1875rem;
+            }
+            .surgimiento-parrafo{
+                margin: 0 15%;
+            }
+        }
+        .contenedor-dedicacion{
+            padding-top: 5rem;
+            .pregunta-dedicacion{
+                font-size: 2.1875rem;
+            }
+            .dedicacion-parrafo{
+                margin: 0 15%;
+            }
+        }
+    }
+}

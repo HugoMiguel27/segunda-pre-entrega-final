@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding-bottom: 3.125rem;
+        .barra-de-navegacion {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+            .logo-esquina {
+                margin: 0 auto;
+                padding-left: 0;
+                img {
+                    height: 7.5rem;
+                }
+            }
+        }
+        .nav-cursos{
+            padding-right: none;
+            ul{
+                padding-top: 1.875rem;
+                font-size: 1.25rem;
+                justify-content: center;
+                gap: 1.5625rem;
+                padding-right: 0;
+            }
+        }
+    }
+    main {
+        .contenedor-de-fotos{
+            .fotos-personas{
+                .persona{
+                    div{
+                        h5{
+                            font-size: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

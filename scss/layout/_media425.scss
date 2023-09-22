@@ -1,15 +1,14 @@
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     header {
-        height: 18.75rem;
-        padding-bottom: 18.75rem;
+        height: auto;
+        padding-bottom: 3.125rem;
 
         .barra-de-navegacion {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, auto);
-
+            
         }
-
         .logo-esquina {
             margin: 0 auto;
             padding-left: 0;
@@ -80,13 +79,15 @@
                 gap: 1.875rem;
 
                 .persona {
+                    margin: 0 2.5%;
                     img {
                         width: 95%;
+                        align-self: center;
                     }
 
                     div {
                         h5 {
-                            bottom: 14%;
+                            bottom: 8%;
                         }
                     }
 

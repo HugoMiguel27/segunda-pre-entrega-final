@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@keyframes efecto_doctor {
+  0% {
+    width: 50%;
+    transition: rotate 20deg;
+  }
+  90% {
+    width: 60%;
+    transition: rotate 0deg;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -236,20 +246,205 @@ footer .copyright {
   font-size: 0.9375rem;
 }
 
-@keyframes efecto_doctor {
-  0% {
-    width: 50%;
-    transition: rotate 20deg;
+@media (max-width: 1024px) {
+  main .primera-seccion {
+    padding-bottom: 100px;
   }
-  90% {
-    width: 60%;
-    transition: rotate 0deg;
+  main .primera-seccion .titulo-principal {
+    padding-right: 0;
+    margin-left: 2.5rem;
+    font-size: 55px;
+  }
+  main .primera-seccion .descripcion-orient {
+    padding-right: 0;
+    margin-left: 2.5rem;
+    padding-left: 20px;
+    font-size: 1.375rem;
+  }
+  main .primera-seccion .segunda-seccion img {
+    width: 75%;
+  }
+  main .contenedor-de-fotos .titulo-pregunta {
+    font-size: 2.1875rem;
+  }
+  main .contenedor-de-fotos .fotos-personas {
+    gap: 0.625rem;
+  }
+  main .contenedor-de-fotos .fotos-personas img:hover {
+    transform: scale(1.05);
+  }
+  main .contenedor-de-fotos .fotos-personas img {
+    width: 90%;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona div h5 {
+    bottom: 13%;
+    font-size: 100%;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona div p {
+    font-size: 87%;
+  }
+  main .contenedor-surgimiento {
+    padding-top: 5rem;
+  }
+  main .contenedor-surgimiento .surgimiento {
+    font-size: 2.1875rem;
+  }
+  main .contenedor-surgimiento .surgimiento-parrafo {
+    margin: 0 15%;
+  }
+  main .contenedor-dedicacion {
+    padding-top: 5rem;
+  }
+  main .contenedor-dedicacion .pregunta-dedicacion {
+    font-size: 2.1875rem;
+  }
+  main .contenedor-dedicacion .dedicacion-parrafo {
+    margin: 0 15%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding-bottom: 3.125rem;
+    padding-right: 1.875rem;
+  }
+  header .barra-de-navegacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  header .barra-de-navegacion .logo-esquina {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  header .barra-de-navegacion .logo-esquina img {
+    height: 7.5rem;
+  }
+  header .nav-cursos {
+    padding-right: none;
+  }
+  header .nav-cursos ul {
+    padding-top: 1.875rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    gap: 1.25rem;
+    padding-right: 0;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona div h5 {
+    font-size: 80%;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    height: auto;
+    padding-bottom: 3.125rem;
+  }
+  header .barra-de-navegacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+  header .logo-esquina {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  header .logo-esquina img {
+    height: 7.5rem;
+  }
+  header .nav-cursos ul {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1.875rem;
+    padding-right: 20%;
+    padding-left: 34%;
+    text-align: start;
+    font-size: 1.5625rem;
+    gap: 2.5rem;
+  }
+  main .primera-seccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: none;
+    gap: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+  main .primera-seccion .titulo-principal {
+    text-align: center;
+    font-size: 2.8125rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+  main .primera-seccion .descripcion-orient {
+    text-align: center;
+    font-size: 1.5625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  main .primera-seccion .segunda-seccion img {
+    width: 90%;
+  }
+  main .contenedor-de-fotos {
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-de-fotos div .titulo-pregunta {
+    margin: 0 5%;
+  }
+  main .contenedor-de-fotos .fotos-personas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1.875rem;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona {
+    margin: 0 2.5%;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona img {
+    width: 95%;
+    align-self: center;
+  }
+  main .contenedor-de-fotos .fotos-personas .persona div h5 {
+    bottom: 8%;
+  }
+  main .contenedor-surgimiento {
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-surgimiento .surgimiento {
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-surgimiento .surgimiento-parrafo {
+    margin: 0 5%;
+    font-size: 1.125rem;
+  }
+  main .contenedor-dedicacion {
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-dedicacion .pregunta-dedicacion {
+    padding-bottom: 3.125rem;
+  }
+  main .contenedor-dedicacion .dedicacion-parrafo {
+    margin: 0 5%;
+    font-size: 1.125rem;
+  }
+  footer {
+    padding-top: 3rem;
+  }
+  footer .lista-opiniones {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.375rem;
+    padding-top: 2.1875rem;
+  }
+  footer .copyright {
+    padding-top: 2.1875rem;
   }
 }
 @media (max-width: 320px) {
   header {
-    height: auto;
-    padding-bottom: 3.125rem;
+    height: 18.75rem;
+    padding-bottom: 18.75rem;
   }
   header .barra-de-navegacion {
     display: grid;
