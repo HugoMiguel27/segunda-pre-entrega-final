@@ -1,0 +1,37 @@
+@media (max-width: 768px){
+    main{
+        section{
+            .titulos-superiores-material{
+                padding-left: 5rem;
+            }
+        }
+        .manual-2023{
+            .imagen-manual-2023{
+                align-self: center;
+            }
+            .descripcion-manual-2023{
+                .p-1-manual{
+                    font-size: 1.0625rem;
+                }
+                .p-2-manual{
+                    font-size: 1.0625rem;
+                }
+            }
+            
+        }
+        .formulario-2023{
+            .imagen-formulario-2023{
+                align-self: center;
+            }
+            .descripcion-formulario-2023{
+                .p-1-manual{
+                    font-size: 1.0625rem;
+                }
+                .p-2-manual{
+                    font-size: 1.0625rem;
+                }
+            }
+            
+        }
+    }
+}

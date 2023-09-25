@@ -1642,5 +1642,153 @@ main .recuerda {
     padding-left: 22%;
   }
 }
+@media (max-width: 1024px) {
+  main section .titulos-superiores-examenes {
+    padding-left: 6.25rem;
+  }
+  main .titulo {
+    padding-left: 6.25rem;
+  }
+  main .section-grids-3 {
+    grid-template-columns: auto 35% 35% auto;
+    gap: 3.125rem;
+  }
+}
+@media (max-width: 768px) {
+  main section .titulos-superiores-examenes {
+    padding-left: 3.75rem;
+  }
+  main .titulo {
+    padding-left: 3.75rem;
+  }
+  main .section-grids-3 {
+    grid-template-columns: auto 40% 40% auto;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 26.5625rem) {
+  main .section .titulos-superiores-examenes {
+    text-align: center;
+  }
+  main .section-grids-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "examen1" "examen2";
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 5rem;
+  }
+  main .titulo {
+    padding-left: 0;
+    padding-bottom: 4.375rem;
+  }
+  main .titulo .titulo-examenes {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  main section .titulos-superiores-examenes {
+    padding-left: 0.625rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  main section .titulos-superiores-material {
+    padding-left: 6.25rem;
+  }
+  main .manual-2023 {
+    grid-template-columns: auto 36% 40% auto;
+    gap: 1.875rem;
+  }
+  main .manual-2023 .imagen-manual-2023 {
+    margin: 25% 0;
+  }
+  main .manual-2023 .imagen-manual-2023 img {
+    width: 100%;
+    margin: 0;
+  }
+  main .formulario-2023 {
+    grid-template-columns: auto 36% 40% auto;
+    gap: 1.875rem;
+  }
+  main .formulario-2023 .imagen-formulario-2023 {
+    margin: 25% 0;
+  }
+  main .formulario-2023 .imagen-formulario-2023 img {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  main section .titulos-superiores-material {
+    padding-left: 5rem;
+  }
+  main .manual-2023 .imagen-manual-2023 {
+    align-self: center;
+  }
+  main .manual-2023 .descripcion-manual-2023 .p-1-manual {
+    font-size: 1.0625rem;
+  }
+  main .manual-2023 .descripcion-manual-2023 .p-2-manual {
+    font-size: 1.0625rem;
+  }
+  main .formulario-2023 .imagen-formulario-2023 {
+    align-self: center;
+  }
+  main .formulario-2023 .descripcion-formulario-2023 .p-1-manual {
+    font-size: 1.0625rem;
+  }
+  main .formulario-2023 .descripcion-formulario-2023 .p-2-manual {
+    font-size: 1.0625rem;
+  }
+}
+@media (max-width: 425px) {
+  main section .titulos-superiores-material {
+    padding-left: 5rem;
+    margin-right: 15%;
+  }
+  main section .titulos-superiores-material h1 {
+    font-size: 2.5rem;
+  }
+  main .manual-2023 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "descripcion" "manual2023";
+    margin: 0 5%;
+    gap: 1.25rem;
+  }
+  main .manual-2023 .imagen-manual-2023 {
+    margin: 0;
+  }
+  main .manual-2023 .descripcion-manual-2023 .p-2-manual {
+    margin-bottom: 5%;
+  }
+  main section .boton {
+    padding-top: 2.5rem;
+  }
+  main .formulario-2023 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "descripcionformulario" "formulario2023";
+    margin: 0 5%;
+    gap: 1.25rem;
+  }
+  main .formulario-2023 .imagen-formulario-2023 {
+    margin: 0;
+  }
+  main .descripcion-formulario-2023 .p-2-formulario {
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 320px) {
+  main section .titulos-superiores-material {
+    padding-left: 3.125rem;
+  }
+  main section .titulos-superiores-material h1 {
+    font-size: 2.5rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

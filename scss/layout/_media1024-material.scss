@@ -1,0 +1,31 @@
+@media (max-width: 1024px){
+    main{
+        section {
+            .titulos-superiores-material {
+                padding-left: 6.25rem;
+            }
+        }
+        .manual-2023{
+            grid-template-columns: auto 36% 40% auto;
+            gap: 1.875rem;
+            .imagen-manual-2023{
+                margin: 25% 0;
+                img{
+                    width: 100%;
+                    margin:0;
+                }
+            }
+        }
+        .formulario-2023{
+            grid-template-columns: auto 36% 40% auto;
+            gap: 1.875rem;
+            .imagen-formulario-2023{
+                margin: 25% 0;
+                img{
+                    width: 100%;
+                    margin:0;
+                }
+            }
+        }
+    }
+}

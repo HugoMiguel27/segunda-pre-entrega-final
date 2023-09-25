@@ -1,0 +1,48 @@
+@media (max-width: 425px){
+    main{
+        section{
+            .titulos-superiores-material{
+                padding-left: 5rem;
+                margin-right: 15%;
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .manual-2023{
+            grid-template-columns: 1fr;
+            grid-template-areas:    "descripcion"
+                                    "manual2023";
+            margin: 0 5%;
+            gap: 1.25rem;
+            .imagen-manual-2023{
+                margin: 0;
+            }
+            .descripcion-manual-2023{
+                .p-2-manual{
+                    margin-bottom: 5%;
+                }
+            }
+        }
+        section{
+            .boton{
+                padding-top: 2.5rem;
+            }
+        }
+        .formulario-2023{
+            grid-template-columns: 1fr;
+            grid-template-areas:    "descripcionformulario"
+                                    "formulario2023";
+            margin: 0 5%;
+            gap: 1.25rem;
+            .imagen-formulario-2023{
+                margin: 0;
+            }
+        }
+        .descripcion-formulario-2023{
+            .p-2-formulario{
+                margin-bottom: 5%;
+            }
+        }
+    }
+}

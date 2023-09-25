@@ -1,0 +1,18 @@
+@media (max-width: 1024px) {
+    main {
+        section {
+            .titulos-superiores-examenes {
+                padding-left: 6.25rem;
+            }
+        }
+
+        .titulo {
+            padding-left: 6.25rem;
+        }
+
+        .section-grids-3 {
+            grid-template-columns: auto 35% 35% auto;
+            gap: 3.125rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@media (max-width: 26.5625rem) {
+    main {
+        .section{
+            .titulos-superiores-examenes{
+                text-align: center;
+            }
+        }
+        .section-grids-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas:    "examen1" 
+                                    "examen2";
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            gap: 5rem;
+        }
+        .titulo{
+            padding-left: 0;
+            padding-bottom: 4.375rem;
+            .titulo-examenes{
+                text-align: center;
+            }
+        }
+    }
+}
