@@ -1,0 +1,160 @@
+main {
+    section {
+        .titulos-superiores-contacto {
+            padding-left: 11.25rem;
+            padding-top: 5rem;
+            padding-bottom: 7.5rem;
+
+            h2 {
+                color: orange;
+                font-size: 1.875rem;
+                font-family: 'Quicksand', sans-serif;
+                text-align: start;
+            }
+
+            h1 {
+                color: white;
+                font-size: 3.125rem;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                text-align: start;
+            }
+        }
+    }
+
+    .medios-de-contacto {
+        display: grid;
+        grid-template-columns: auto 24% 25% 25% auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: ".    WhatsApp    CallCenter   CallCenter    ."
+            ".    Messenger   CallCenter   CallCenter    ."
+            ".    Teléfono    CallCenter   CallCenter    .";
+
+        place-items: center;
+        padding-bottom: 6.25rem;
+
+        .whatsapp-contacto {
+            display: flex;
+            grid-area: WhatsApp;
+            color: white;
+
+            button {
+                background-color: #535353;
+                border-radius: 1.25rem;
+                box-shadow: none;
+                padding: .3125rem 2.5rem;
+
+                a {
+                    img {
+                        width: 4.375rem;
+                        padding-bottom: .625rem;
+                    }
+
+                    p {
+                        font-family: 'Quicksand', sans-serif;
+                        font-size: 1.5625rem;
+                        font-weight: 700;
+                        color: orange;
+                    }
+
+                    p::first-letter {
+                        color: white;
+                        font-size: 1.875rem;
+                    }
+                }
+
+            }
+
+            button:hover {
+                background-color: #9ebcbf;
+            }
+        }
+
+        .messenger-contacto {
+            grid-area: Messenger;
+            color: white;
+
+            button {
+                background-color: #535353;
+                border-radius: 1.25rem;
+                box-shadow: none;
+                padding: .3125rem 2.5rem;
+
+                a {
+                    img {
+                        width: 4.375rem;
+                        padding-bottom: .625rem;
+                    }
+
+                    p {
+                        font-family: 'Quicksand', sans-serif;
+                        font-size: 1.5625rem;
+                        font-weight: 700;
+                        color: orange;
+                    }
+
+                    p::first-letter {
+                        color: white;
+                        font-size: 1.875rem;
+                    }
+                }
+            }
+
+            button:hover {
+                background-color: #9ebcbf;
+            }
+        }
+
+        .telefono-contacto {
+            grid-area: Teléfono;
+            color: white;
+
+            button {
+                background-color: #535353;
+                border-radius: 1.25rem;
+                padding: .3125rem 2.5rem;
+
+                a {
+                    img {
+                        width: 4.375rem;
+                        padding-bottom: .625rem;
+                    }
+
+                    p {
+                        font-family: 'Quicksand', sans-serif;
+                        font-size: 1.5625rem;
+                        font-weight: 700;
+                        color: orange;
+                    }
+
+                    p::first-letter {
+                        color: white;
+                        font-size: 1.875rem;
+                    }
+                }
+            }
+            button:hover {
+                background-color: #9ebcbf;
+            }
+        }
+
+        .callcenter-contacto {
+            grid-area: CallCenter;
+            color: white;
+
+            img {
+                width: 31.25rem;
+            }
+
+        }
+    }
+
+    .recuerda {
+        color: #898989;
+        font-size: .9375rem;
+        font-family: 'Quicksand', sans-serif;
+        text-align: start;
+        padding-left: 11.25rem;
+        padding-bottom: 7.5rem;
+    }
+}

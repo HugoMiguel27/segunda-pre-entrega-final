@@ -206,8 +206,9 @@ main .contenedor-dedicacion .dedicacion-parrafo {
 }
 
 footer {
-  padding-top: 1.875rem;
+  padding-top: 3.125rem;
   background-color: black;
+  border-top: 1px solid grey;
 }
 footer .section-footer {
   display: flex;
@@ -475,7 +476,7 @@ main .section-grids .tarjeta-diseño .diseño .lista-de-contenido a:visited {
   text-decoration: none;
 }
 main .registro {
-  padding-left: 180px;
+  padding-left: 11.25rem;
   padding-bottom: 9.375rem;
 }
 main .registro .titulo-registro {
@@ -849,6 +850,274 @@ main .titulo .titulo-examenes {
   font-family: "DM Sans", sans-serif;
 }
 
+main section .titulos-superiores-material {
+  padding-left: 11.25rem;
+  padding-top: 6.25rem;
+  padding-bottom: 7.5rem;
+}
+main section .titulos-superiores-material h2 {
+  color: orange;
+  font-size: 1.875rem;
+  font-family: "Quicksand", sans-serif;
+  text-align: start;
+}
+main section .titulos-superiores-material h1 {
+  color: white;
+  font-size: 3.125rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-align: start;
+}
+main .manual-2023 {
+  display: grid;
+  grid-template-columns: auto 25% 40% auto;
+  grid-template-rows: auto;
+  grid-template-areas: ". manual2023 descripcion .";
+}
+main .manual-2023 .imagen-manual-2023 {
+  grid-area: manual2023;
+}
+main .manual-2023 .imagen-manual-2023 img {
+  width: 70%;
+  margin: 20%;
+}
+main .manual-2023 .imagen-manual-2023 img:hover {
+  width: 72%;
+}
+main .manual-2023 .descripcion-manual-2023 {
+  grid-area: descripcion;
+}
+main .manual-2023 .descripcion-manual-2023 h2 {
+  font-family: "DM Sans", sans-serif;
+  font-style: none;
+  font-size: 1.875rem;
+  color: orange;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  margin-top: 20%;
+}
+main .manual-2023 .descripcion-manual-2023 .p-1-manual {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-style: none;
+  font-size: 1.25rem;
+  text-align: center;
+}
+main .manual-2023 .descripcion-manual-2023 .p-2-manual {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-style: none;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 20%;
+}
+main section .boton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4.375rem;
+}
+main section .boton .boton-manual {
+  font-size: 1.875rem;
+  padding: 1.25rem;
+  background-color: orange;
+  border-radius: 1.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  color: #343434;
+  border: 0.125rem solid white;
+  box-shadow: 0.4375rem 0.4375rem white;
+}
+main section .boton .boton-manual:hover {
+  color: grey;
+  cursor: pointer;
+}
+main section .boton .boton-manual:active {
+  color: white;
+}
+main .formulario-2023 {
+  display: grid;
+  padding-top: 3.125rem;
+  grid-template-columns: auto 25% 40% auto;
+  grid-template-rows: auto;
+  grid-template-areas: ". formulario2023 descripcionformulario .";
+}
+main .formulario-2023 .imagen-formulario-2023 {
+  grid-area: formulario2023;
+  margin: 15% 0;
+}
+main .formulario-2023 .imagen-formulario-2023 img {
+  width: 70%;
+  margin: 20%;
+}
+main .formulario-2023 .imagen-formulario-2023 .imagen-formulario-2023 img:hover {
+  width: 72%;
+}
+main .descripcion-formulario-2023 {
+  grid-area: descripcionformulario;
+}
+main .descripcion-formulario-2023 h2 {
+  font-family: "DM Sans", sans-serif;
+  font-style: none;
+  font-size: 1.875rem;
+  color: orange;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  margin-top: 20%;
+}
+main .p-1-formulario {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-style: none;
+  font-size: 1.25rem;
+  text-align: center;
+}
+main .p-2-formulario {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-style: none;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 20%;
+}
+main section .boton {
+  display: flex;
+  justify-content: center;
+}
+main section .boton .boton-manual {
+  font-size: 1.875rem;
+  padding: 1.25rem;
+  background-color: orange;
+  border-radius: 1.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+  color: #343434;
+  border: 0.125rem solid white;
+  box-shadow: 0.25rem 0.25rem white;
+}
+
+main section .titulos-superiores-contacto {
+  padding-left: 11.25rem;
+  padding-top: 5rem;
+  padding-bottom: 7.5rem;
+}
+main section .titulos-superiores-contacto h2 {
+  color: orange;
+  font-size: 1.875rem;
+  font-family: "Quicksand", sans-serif;
+  text-align: start;
+}
+main section .titulos-superiores-contacto h1 {
+  color: white;
+  font-size: 3.125rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-align: start;
+}
+main .medios-de-contacto {
+  display: grid;
+  grid-template-columns: auto 24% 25% 25% auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: ".    WhatsApp    CallCenter   CallCenter    ." ".    Messenger   CallCenter   CallCenter    ." ".    Teléfono    CallCenter   CallCenter    .";
+  place-items: center;
+  padding-bottom: 6.25rem;
+}
+main .medios-de-contacto .whatsapp-contacto {
+  display: flex;
+  grid-area: WhatsApp;
+  color: white;
+}
+main .medios-de-contacto .whatsapp-contacto button {
+  background-color: #535353;
+  border-radius: 1.25rem;
+  box-shadow: none;
+  padding: 0.3125rem 2.5rem;
+}
+main .medios-de-contacto .whatsapp-contacto button a img {
+  width: 4.375rem;
+  padding-bottom: 0.625rem;
+}
+main .medios-de-contacto .whatsapp-contacto button a p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: orange;
+}
+main .medios-de-contacto .whatsapp-contacto button a p::first-letter {
+  color: white;
+  font-size: 1.875rem;
+}
+main .medios-de-contacto .whatsapp-contacto button:hover {
+  background-color: #9ebcbf;
+}
+main .medios-de-contacto .messenger-contacto {
+  grid-area: Messenger;
+  color: white;
+}
+main .medios-de-contacto .messenger-contacto button {
+  background-color: #535353;
+  border-radius: 1.25rem;
+  box-shadow: none;
+  padding: 0.3125rem 2.5rem;
+}
+main .medios-de-contacto .messenger-contacto button a img {
+  width: 4.375rem;
+  padding-bottom: 0.625rem;
+}
+main .medios-de-contacto .messenger-contacto button a p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: orange;
+}
+main .medios-de-contacto .messenger-contacto button a p::first-letter {
+  color: white;
+  font-size: 1.875rem;
+}
+main .medios-de-contacto .messenger-contacto button:hover {
+  background-color: #9ebcbf;
+}
+main .medios-de-contacto .telefono-contacto {
+  grid-area: Teléfono;
+  color: white;
+}
+main .medios-de-contacto .telefono-contacto button {
+  background-color: #535353;
+  border-radius: 1.25rem;
+  padding: 0.3125rem 2.5rem;
+}
+main .medios-de-contacto .telefono-contacto button a img {
+  width: 4.375rem;
+  padding-bottom: 0.625rem;
+}
+main .medios-de-contacto .telefono-contacto button a p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: orange;
+}
+main .medios-de-contacto .telefono-contacto button a p::first-letter {
+  color: white;
+  font-size: 1.875rem;
+}
+main .medios-de-contacto .telefono-contacto button:hover {
+  background-color: #9ebcbf;
+}
+main .medios-de-contacto .callcenter-contacto {
+  grid-area: CallCenter;
+  color: white;
+}
+main .medios-de-contacto .callcenter-contacto img {
+  width: 31.25rem;
+}
+main .recuerda {
+  color: #898989;
+  font-size: 0.9375rem;
+  font-family: "Quicksand", sans-serif;
+  text-align: start;
+  padding-left: 11.25rem;
+  padding-bottom: 7.5rem;
+}
+
 @media (max-width: 1024px) {
   main .primera-seccion {
     padding-bottom: 100px;
@@ -1146,6 +1415,231 @@ main .titulo .titulo-examenes {
   }
   footer .copyright {
     padding-top: 2.1875rem;
+  }
+}
+@media (max-width: 1024px) {
+  main .titulos .titulos-superiores {
+    padding-left: 6.25rem;
+  }
+  main .section-grids {
+    grid-template-columns: auto 26% 26% 26% auto;
+    gap: 1.25rem;
+  }
+  main .registro {
+    padding-left: 6.25rem;
+    margin-right: 7.5rem;
+  }
+  main section .otros-cursos {
+    padding-left: 7.5rem;
+    padding-right: 0;
+  }
+  main .section-grids-2 {
+    grid-template-columns: auto 26% 26% 26% auto;
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  main .titulos .titulos-superiores {
+    padding-left: 4.375rem;
+  }
+  main .section-grids {
+    grid-template-columns: auto 24% 24% 24% auto;
+  }
+  main .section-grids .tarjeta-medicina {
+    width: 11.875rem;
+  }
+  main .section-grids .tarjeta-medicina .medicina .titulo-tarjeta-medicina {
+    font-size: 1.25rem;
+  }
+  main .section-grids .tarjeta-medicina .medicina .parrafo-superior-medicina {
+    font-size: 1.125rem;
+    padding-bottom: 2.1875rem;
+  }
+  main .section-grids .tarjeta-medicina .medicina .disponible-tarjeta {
+    padding: 0 0.625rem;
+  }
+  main .section-grids .tarjeta-medicina .medicina .lista-de-contenido {
+    padding-left: 0.625rem;
+  }
+  main .section-grids .tarjeta-administracion {
+    width: 11.875rem;
+  }
+  main .section-grids .tarjeta-administracion .administracion .titulo-tarjeta-administracion {
+    font-size: 1.25rem;
+  }
+  main .section-grids .tarjeta-administracion .administracion .parrafo-superior-administracion {
+    font-size: 1.125rem;
+  }
+  main .section-grids .tarjeta-administracion .administracion .disponible-tarjeta {
+    padding: 0 0.625rem;
+  }
+  main .section-grids .tarjeta-administracion .administracion .lista-de-contenido {
+    padding-left: 0.625rem;
+  }
+  main .section-grids .tarjeta-diseño {
+    width: 11.875rem;
+  }
+  main .section-grids .tarjeta-diseño .diseño .titulo-tarjeta-diseño {
+    font-size: 1.25rem;
+  }
+  main .section-grids .tarjeta-diseño .diseño .parrafo-superior-diseño {
+    font-size: 1.125rem;
+  }
+  main .section-grids .tarjeta-diseño .diseño .disponible-tarjeta {
+    padding: 0 0.625rem;
+  }
+  main .section-grids .tarjeta-diseño .diseño .lista-de-contenido {
+    padding-left: 0.625rem;
+    padding-top: 2.5rem;
+  }
+  main .registro {
+    padding-left: 2.5rem;
+    padding-bottom: 6.875rem;
+  }
+  main section .otros-cursos {
+    padding-left: 5.625rem;
+    padding-right: 0;
+  }
+  main .section-grids-2 {
+    grid-template-columns: auto 24% 24% 24% auto;
+    padding-bottom: 6.25rem;
+  }
+  main .section-grids-2 .tarjeta-ingenieria {
+    width: 11.875rem;
+  }
+  main .section-grids-2 .tarjeta-ingenieria a .titulo-tarjeta-ingenieria {
+    font-size: 1.25rem;
+  }
+  main .section-grids-2 .tarjeta-ingenieria a .parrafo-superior-ingenieria {
+    font-size: 1.125rem;
+    padding-bottom: 2.1875rem;
+  }
+  main .section-grids-2 .tarjeta-ingenieria a .disponible-tarjeta {
+    padding: 0 0.625rem;
+    font-size: 1.4375rem;
+  }
+  main .section-grids-2 .tarjeta-ingenieria a .lista-de-contenido {
+    padding-left: 0.625rem;
+  }
+  main .section-grids-2 .tarjeta-arquitectura {
+    width: 11.875rem;
+  }
+  main .section-grids-2 .tarjeta-arquitectura a .titulo-tarjeta-arquitectura {
+    font-size: 1.25rem;
+  }
+  main .section-grids-2 .tarjeta-arquitectura a .parrafo-superior-arquitectura {
+    font-size: 1.125rem;
+    padding-bottom: 2.1875rem;
+  }
+  main .section-grids-2 .tarjeta-arquitectura a .disponible-tarjeta {
+    padding: 0 0.625rem;
+    font-size: 1.4375rem;
+  }
+  main .section-grids-2 .tarjeta-arquitectura a .descripcion-tarjeta {
+    padding-bottom: 2.3125rem;
+  }
+  main .section-grids-2 .tarjeta-arquitectura a .lista-de-contenido {
+    padding-left: 0.625rem;
+  }
+  main .section-grids-2 .tarjeta-programacion {
+    width: 11.875rem;
+  }
+  main .section-grids-2 .tarjeta-programacion a .titulo-tarjeta-programacion {
+    font-size: 1.25rem;
+  }
+  main .section-grids-2 .tarjeta-programacion a .parrafo-superior-programacion {
+    font-size: 1.125rem;
+    padding-bottom: 2.1875rem;
+  }
+  main .section-grids-2 .tarjeta-programacion a .disponible-tarjeta {
+    padding: 0 0.625rem;
+    font-size: 1.4375rem;
+  }
+  main .section-grids-2 .tarjeta-programacion a .descripcion-tarjeta {
+    padding-bottom: 5.9375rem;
+  }
+  main .section-grids-2 .tarjeta-programacion a .lista-de-contenido {
+    padding-left: 0.625rem;
+  }
+  main .titulo-tarjeta-arquitectura {
+    font-size: 1.25rem;
+  }
+  main .titulo-tarjeta-programacion {
+    font-size: 1.25rem;
+  }
+  main .titulo-tarjeta-ingenieria {
+    font-size: 1.25rem;
+  }
+  main .parrafo-superior-administracion {
+    font-size: 1.125rem;
+  }
+  main .parrafo-superior-arquitectura {
+    font-size: 1.125rem;
+  }
+  main .parrafo-superior-diseño {
+    font-size: 1.125rem;
+  }
+  main .parrafo-superior-ingenieria {
+    font-size: 1.125rem;
+  }
+  main .parrafo-superior-programacion {
+    font-size: 1.125rem;
+  }
+  main .registro {
+    padding-left: 5.625rem;
+  }
+  main .otros-cursos {
+    padding-left: 5.625rem;
+  }
+  main .disponible-tarjeta {
+    font-size: 1.375rem;
+  }
+  main .lista-de-contenido {
+    padding-left: 0.625rem;
+  }
+}
+@media (max-width: 425px) {
+  main .titulos .titulos-superiores {
+    padding-left: 3.125rem;
+  }
+  main .section-grids {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "medicina" "administración" "diseño";
+    gap: 1.875rem;
+    width: 100%;
+    padding-left: 25%;
+  }
+  main .registro {
+    padding-left: 3rem;
+    margin-right: 0%;
+  }
+  main section .otros-cursos {
+    padding-left: 3rem;
+    padding-right: 0;
+    margin-right: 20%;
+  }
+  main .section-grids-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "ingenieria" "arquitectura" "programacion";
+    gap: 1.875rem;
+    width: 100%;
+    padding-left: 25%;
+  }
+}
+@media (max-width: 320px) {
+  main .section-grids {
+    padding-left: 22%;
+  }
+  main .registro {
+    padding-left: 3rem;
+    margin-right: 10%;
+  }
+  main .section-grids-2 {
+    padding-left: 22%;
   }
 }
 

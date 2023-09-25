@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+    main {
+        .titulos {
+            .titulos-superiores {
+                    padding-left: 6.25rem;
+                }
+        }
+        .section-grids {
+            grid-template-columns: auto 26% 26% 26% auto;
+            gap: 1.25rem;
+        }
+        .registro {
+            padding-left: 6.25rem;
+            margin-right: 7.5rem;
+        }
+        section{
+            .otros-cursos{
+                padding-left: 7.5rem;
+                padding-right: 0;
+            }
+        }
+        .section-grids-2 {
+            grid-template-columns: auto 26% 26% 26% auto;
+            gap: 1.25rem;
+        }
+    }
+}

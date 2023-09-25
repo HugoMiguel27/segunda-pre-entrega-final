@@ -1,0 +1,227 @@
+@media (max-width: 768px) {
+
+    
+    
+    main {
+
+        .titulos {
+            .titulos-superiores {
+                padding-left: 4.375rem;
+            }
+        }
+
+        .section-grids {
+            grid-template-columns: auto 24% 24% 24% auto;
+            .tarjeta-medicina {
+                width: 11.875rem;
+
+                .medicina {
+                    .titulo-tarjeta-medicina {
+                        font-size: 1.25rem;
+                    }
+
+                    .parrafo-superior-medicina {
+                        font-size: 1.125rem;
+                        padding-bottom: 2.1875rem;
+                    }
+
+                    .disponible-tarjeta {
+                        padding: 0 .625rem;
+                    }
+
+                    .lista-de-contenido {
+                        padding-left: .625rem;
+                    }
+                }
+            }
+
+            .tarjeta-administracion {
+                width: 11.875rem;
+
+                .administracion {
+                    .titulo-tarjeta-administracion {
+                        font-size: 1.25rem;
+                    }
+
+                    .parrafo-superior-administracion {
+                        font-size: 1.125rem;
+                    }
+
+                    .disponible-tarjeta {
+                        padding: 0 .625rem;
+                    }
+
+                    .lista-de-contenido {
+                        padding-left: .625rem;
+                    }
+                }
+            }
+
+            .tarjeta-diseño {
+                width: 11.875rem;
+
+                .diseño {
+                    .titulo-tarjeta-diseño {
+                        font-size: 1.25rem;
+                    }
+
+                    .parrafo-superior-diseño {
+                        font-size: 1.125rem;
+                    }
+
+                    .disponible-tarjeta {
+                        padding: 0 .625rem;
+                    }
+
+                    .lista-de-contenido {
+                        padding-left: .625rem;
+                        padding-top: 2.5rem;
+                    }
+                }
+            }
+        }
+
+        .registro {
+            padding-left: 2.5rem;
+            padding-bottom: 6.875rem;
+        }
+
+        section{
+            .otros-cursos {
+                padding-left: 5.625rem;
+                padding-right: 0;
+            }
+        }
+
+        .section-grids-2{
+            grid-template-columns: auto 24% 24% 24% auto;
+            padding-bottom: 6.25rem;
+            .tarjeta-ingenieria {
+                width: 11.875rem;
+
+                a {
+                    .titulo-tarjeta-ingenieria {
+                        font-size: 1.25rem;
+                    }
+
+                    .parrafo-superior-ingenieria {
+                        font-size: 1.125rem;
+                        padding-bottom: 2.1875rem;
+                    }
+
+                    .disponible-tarjeta {
+                        padding: 0 .625rem;
+                        font-size: 1.4375rem;
+                    }
+
+                    .lista-de-contenido {
+                        padding-left: .625rem;
+                    }
+                }
+            }
+
+            .tarjeta-arquitectura {
+                width: 11.875rem;
+
+                a {
+                    .titulo-tarjeta-arquitectura {
+                        font-size: 1.25rem;
+                    }
+
+                    .parrafo-superior-arquitectura {
+                        font-size: 1.125rem;
+                        padding-bottom: 2.1875rem;
+                    }
+
+                    .disponible-tarjeta {
+                        padding: 0 .625rem;
+                        font-size: 1.4375rem;
+                    }
+                    .descripcion-tarjeta{
+                        padding-bottom: 2.3125rem;
+                    }
+
+                    .lista-de-contenido {
+                        padding-left: .625rem;
+                    }
+                }
+            }
+            .tarjeta-programacion {
+                width: 11.875rem;
+
+                a {
+                    .titulo-tarjeta-programacion {
+                        font-size: 1.25rem;
+                    }
+
+                    .parrafo-superior-programacion {
+                        font-size: 1.125rem;
+                        padding-bottom: 2.1875rem;
+                    }
+
+                    .disponible-tarjeta {
+                        padding: 0 .625rem;
+                        font-size: 1.4375rem;
+                    }
+                    .descripcion-tarjeta{
+                        padding-bottom: 5.9375rem;
+                    }
+
+                    .lista-de-contenido {
+                        padding-left: .625rem;
+                    }
+                }
+            }
+        }
+
+        .titulo-tarjeta-arquitectura {
+            font-size: 1.25rem;
+        }
+
+        .titulo-tarjeta-programacion {
+            font-size: 1.25rem;
+        }
+
+        .titulo-tarjeta-ingenieria {
+            font-size: 1.25rem;
+        }
+
+        .parrafo-superior-administracion {
+            font-size: 1.125rem;
+        }
+
+        .parrafo-superior-arquitectura {
+            font-size: 1.125rem;
+        }
+
+        .parrafo-superior-diseño {
+            font-size: 1.125rem;
+        }
+
+        .parrafo-superior-ingenieria {
+            font-size: 1.125rem;
+        }
+
+
+
+        .parrafo-superior-programacion {
+            font-size: 1.125rem;
+        }
+
+        .registro {
+            padding-left: 5.625rem;
+        }
+
+        .otros-cursos {
+            padding-left: 5.625rem;
+        }
+
+        .disponible-tarjeta {
+            font-size: 1.375rem;
+        }
+
+        .lista-de-contenido {
+            padding-left: .625rem;
+        }
+    }
+}

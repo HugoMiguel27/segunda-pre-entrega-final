@@ -1,0 +1,170 @@
+main {
+    section {
+        .titulos-superiores-material {
+            padding-left: 11.25rem;
+            padding-top: 6.25rem;
+            padding-bottom: 7.5rem;
+
+            h2 {
+                color: orange;
+                font-size: 1.875rem;
+                font-family: 'Quicksand', sans-serif;
+                text-align: start;
+            }
+
+            h1 {
+                color: white;
+                font-size: 3.125rem;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                text-align: start;
+            }
+        }
+    }
+
+    .manual-2023 {
+        display: grid;
+        grid-template-columns: auto 25% 40% auto;
+        grid-template-rows: auto;
+        grid-template-areas: ". manual2023 descripcion .";
+
+        .imagen-manual-2023 {
+            grid-area: manual2023;
+
+            img {
+                width: 70%;
+                margin: 20%;
+            }
+
+            img:hover {
+                width: 72%;
+            }
+        }
+
+        .descripcion-manual-2023 {
+            grid-area: descripcion;
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-style: none;
+                font-size: 1.875rem;
+                color: orange;
+                text-align: center;
+                padding-bottom: 2.5rem;
+                margin-top: 20%;
+            }
+
+            .p-1-manual {
+                font-family: 'Quicksand', sans-serif;
+                color: white;
+                font-style: none;
+                font-size: 1.25rem;
+                text-align: center;
+            }
+
+            .p-2-manual {
+                font-family: 'Quicksand', sans-serif;
+                color: white;
+                font-style: none;
+                font-size: 1.25rem;
+                text-align: center;
+                margin-bottom: 20%;
+            }
+        }
+    }
+    section{
+        .boton{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 4.375rem;
+            .boton-manual{
+                font-size: 1.875rem;
+                padding: 1.25rem;
+                background-color: orange;;
+                border-radius: 1.25rem;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 900;
+                color: #343434;
+                border: .125rem solid white;
+                box-shadow: .4375rem .4375rem white;
+            }
+            .boton-manual:hover{
+                color:grey;
+                cursor: pointer;
+            }
+            .boton-manual:active{
+                color: white;
+            }
+    }
+}
+
+    .formulario-2023 {
+        display: grid;
+        padding-top: 3.125rem;
+        grid-template-columns: auto 25% 40% auto;
+        grid-template-rows: auto;
+        grid-template-areas: ". formulario2023 descripcionformulario .";
+
+        .imagen-formulario-2023 {
+            grid-area: formulario2023;
+            margin: 15% 0;
+
+            img {
+                width: 70%;
+                margin: 20%;
+            }
+
+            .imagen-formulario-2023 img:hover {
+                width: 72%;
+            }
+        }
+    }
+
+    .descripcion-formulario-2023 {
+        grid-area: descripcionformulario;
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-style: none;
+            font-size: 1.875rem;
+            color: orange;
+            text-align: center;
+            padding-bottom: 2.5rem;
+            margin-top: 20%;
+        }
+    }
+
+    .p-1-formulario {
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        font-style: none;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .p-2-formulario {
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        font-style: none;
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+    section{
+        .boton{
+            display: flex;
+            justify-content: center;
+            .boton-manual{
+                font-size: 1.875rem;
+                padding: 1.25rem;
+                background-color: orange;;
+                border-radius: 1.25rem;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 900;
+                color: #343434;
+                border: .125rem solid white;
+                box-shadow: .25rem .25rem white;
+            }
+        }
+    }
+}

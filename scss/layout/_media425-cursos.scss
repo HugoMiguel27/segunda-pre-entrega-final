@@ -1,0 +1,48 @@
+@media (max-width: 425px) {
+
+    main {
+        .titulos {
+            .titulos-superiores {
+                padding-left: 3.125rem;
+            }
+        }
+
+        .section-grids {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: "medicina"
+                "administración"
+                "diseño";
+            gap: 1.875rem;
+            width: 100%;
+            padding-left: 25%;
+        }
+
+
+    .registro {
+        padding-left: 3rem;
+        margin-right: 0%;
+
+    }
+    section{
+        .otros-cursos{
+            padding-left: 3rem;
+            padding-right: 0;
+            margin-right: 20%;
+        }
+    }
+
+    .section-grids-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:    "ingenieria"
+                                "arquitectura"
+                                "programacion";
+        gap: 1.875rem;
+        width: 100%;
+        padding-left: 25%;
+    }
+}
+}
