@@ -33,10 +33,13 @@ main {
 
         .tarjeta-medicina a:visited {
             text-decoration: none;
+
         }
 
         .tarjeta-medicina:hover {
-            background-color: #3f444e;
+            transform: scale(1.05);
+            border: 1px solid yellow;
+            background-color: #111111;
         }
 
         .tarjeta-medicina {
@@ -89,12 +92,31 @@ main {
                     font-weight: 500;
                     padding: 1.25rem .9375rem;
                 }
+
+                .lista-de-contenido {
+                    color: #b0b0b0;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: large;
+                    font-weight: 700;
+                    text-align: left;
+                    text-decoration: none;
+                    padding-left: 2.5rem;
+                    padding-bottom: 1.875rem;
+                    list-style: none;
+                }
+
+                .lista-de-contenido a:visited {
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
             }
         }
 
+
         .tarjeta-administracion:hover {
-            background-color: #3f444e;
-            height: 98%;
+            transform: scale(1.05);
+            border: 1px solid yellow;
+            background-color: #111111;
         }
 
         .tarjeta-administracion {
@@ -148,12 +170,30 @@ main {
                     font-weight: 500;
                     padding: 1.25rem .9375rem;
                 }
+
+                .lista-de-contenido {
+                    color: #b0b0b0;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: large;
+                    font-weight: 700;
+                    text-align: left;
+                    text-decoration: none;
+                    padding-left: 2.5rem;
+                    padding-bottom: 1.875rem;
+                    list-style: none;
+                }
+
+                .lista-de-contenido a:visited {
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
             }
         }
 
         .tarjeta-diseño:hover {
-            background-color: #3f444e;
-            height: 98%;
+            transform: scale(1.05);
+            border: 1px solid yellow;
+            background-color: #111111;
         }
 
         .tarjeta-diseño {
@@ -189,40 +229,324 @@ main {
                     width: 90%;
                     margin: 0 5%;
                 }
-            }
 
-            .disponible-tarjeta {
-                color: orange;
+                .disponible-tarjeta {
+                    color: orange;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 1.875rem;
+                    text-align: center;
+                    font-weight: 600;
+                    padding-top: 1.25rem;
+                }
+
+                .descripcion-tarjeta {
+                    color: #9d9d9d;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    font-weight: 500;
+                    padding: 1.25rem .9375rem;
+                }
+
+                .lista-de-contenido {
+                    color: #b0b0b0;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: large;
+                    font-weight: 700;
+                    text-align: left;
+                    text-decoration: none;
+                    padding-left: 2.5rem;
+                    padding-bottom: 1.875rem;
+                    list-style: none;
+                }
+
+                .lista-de-contenido a:visited {
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .registro {
+        padding-left: 180px;
+        padding-bottom: 9.375rem;
+
+        .titulo-registro {
+            font-size: larger;
+            color: orange;
+            font-weight: bolder;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .instruccion-registro {
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+
+    section {
+        .otros-cursos {
+            padding-left: 11.25rem;
+            padding-top: 6.25rem;
+            padding-right: 75rem;
+
+            h1 {
+                color: white;
+                font-size: 3.125rem;
                 font-family: 'DM Sans', sans-serif;
-                font-size: 1.875rem;
-                text-align: center;
-                font-weight: 600;
-                padding-top: 1.25rem;
-            }
-
-            .descripcion-tarjeta {
-                color: #9d9d9d;
-                font-family: 'Quicksand', sans-serif;
-                font-size: medium;
-                text-align: center;
-                font-weight: 500;
-                padding: 1.25rem .9375rem;
-            }
-            .lista-de-contenido {
-                color: #b0b0b0;
-                font-family: 'Quicksand', sans-serif;
-                font-size: large;
                 font-weight: 700;
-                text-align: left;
-                text-decoration: none;
-                padding-left: 2.5rem;
-                padding-bottom: 1.875rem;
-                list-style: none;
+                text-align: start;
             }
-            
-            .lista-de-contenido a:visited {
-                color: #b0b0b0;
-                text-decoration: none;
+        }
+    }
+
+    .section-grids-2 {
+        display: grid;
+        grid-template-columns: auto 21% 21% 21% auto;
+        grid-template-rows: auto;
+        grid-template-areas: ". ingenieria arquitectura programacion . ";
+        width: 100%;
+        align-items: center;
+        padding-top: 6.25rem;
+        padding-bottom: 12.5rem;
+        gap: 3.4375rem;
+
+        .tarjeta-ingenieria a:visited {
+            text-decoration: none;
+
+        }
+
+        .tarjeta-ingenieria:hover {
+            transform: scale(1.05);
+            border: 1px solid yellow;
+            background-color: #111111;
+        }
+
+        .tarjeta-ingenieria {
+            grid-area: ingenieria;
+            height: 100%;
+            background-color: #1b2031;
+            border-radius: 1.875rem;
+            padding-top: .625rem;
+
+            a {
+                .titulo-tarjeta-ingenieria {
+                    color: #1d60e9;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    text-decoration: underline;
+                    font-size: 1.5625rem;
+                    text-align: center;
+                    padding-bottom: .625rem;
+                }
+
+                .parrafo-superior-ingenieria {
+                    color: white;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    text-align: center;
+                    font-style: normal;
+                    padding-bottom: .625rem;
+                }
+
+                .imagen-profesion {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+
+                .disponible-tarjeta {
+                    color: orange;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 1.875rem;
+                    text-align: center;
+                    font-weight: 600;
+                    padding-top: 1.25rem;
+                }
+
+                .descripcion-tarjeta {
+                    color: #9d9d9d;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    font-weight: 500;
+                    padding: 1.25rem .9375rem;
+                }
+
+                .lista-de-contenido {
+                    color: #b0b0b0;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: large;
+                    font-weight: 700;
+                    text-align: left;
+                    text-decoration: none;
+                    padding-left: 2.5rem;
+                    padding-bottom: 1.875rem;
+                    list-style: none;
+                }
+
+                .lista-de-contenido a:visited {
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+        .tarjeta-arquitectura:hover {
+            transform: scale(1.05);
+            border: 1px solid yellow;
+            background-color: #111111;
+        }
+
+        .tarjeta-arquitectura {
+            grid-area: arquitectura;
+            height: 100%;
+            background-color: #1b2031;
+            border-radius: 1.875rem;
+            padding-top: .625rem;
+
+            a {
+                .titulo-tarjeta-arquitectura {
+                    color: white;
+                    color: green;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    text-decoration: underline;
+                    font-size: 1.5625rem;
+                    text-align: center;
+                    padding-bottom: .625rem;
+                }
+
+                .parrafo-superior-arquitectura {
+                    color: white;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    text-align: center;
+                    font-style: normal;
+                    padding-bottom: .625rem;
+                }
+
+                .imagen-profesion {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+
+                .disponible-tarjeta {
+                    color: orange;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 1.875rem;
+                    text-align: center;
+                    font-weight: 600;
+                    padding-top: 1.25rem;
+                }
+
+                .descripcion-tarjeta {
+                    color: #9d9d9d;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    font-weight: 500;
+                    padding: 1.25rem .9375rem;
+                }
+
+                .lista-de-contenido {
+                    color: #b0b0b0;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: large;
+                    font-weight: 700;
+                    text-align: left;
+                    text-decoration: none;
+                    padding-left: 2.5rem;
+                    padding-bottom: 1.875rem;
+                    list-style: none;
+                }
+
+                .lista-de-contenido a:visited {
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .tarjeta-programacion:hover {
+            transform: scale(1.05);
+            border: 1px solid yellow;
+            background-color: #111111;
+        }
+
+        .tarjeta-programacion {
+            grid-area: programacion;
+            background-color: #1b2031;
+            border-radius: 1.875rem;
+            height: 100%;
+            padding-top: .625rem;
+
+            a {
+                .titulo-tarjeta-programacion {
+                    color: white;
+                    color: orange;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    text-decoration: underline;
+                    font-size: 1.5625rem;
+                    text-align: center;
+                    padding-bottom: .625rem;
+                }
+
+                .parrafo-superior-programacion {
+                    color: white;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    text-align: center;
+                    font-style: normal;
+                    padding-bottom: .625rem;
+                }
+
+                .imagen-profesion {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+
+                .disponible-tarjeta {
+                    color: orange;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 1.875rem;
+                    text-align: center;
+                    font-weight: 600;
+                    padding-top: 1.25rem;
+                }
+
+                .descripcion-tarjeta {
+                    color: #9d9d9d;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: medium;
+                    text-align: center;
+                    font-weight: 500;
+                    padding: 1.25rem .9375rem;
+                }
+
+                .lista-de-contenido {
+                    color: #b0b0b0;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: large;
+                    font-weight: 700;
+                    text-align: left;
+                    text-decoration: none;
+                    padding-left: 2.5rem;
+                    padding-bottom: 1.875rem;
+                    list-style: none;
+                }
+
+                .lista-de-contenido a:visited {
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
             }
         }
     }
