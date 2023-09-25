@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
 @keyframes efecto_doctor {
   0% {
@@ -246,6 +247,200 @@ footer .copyright {
   font-size: 0.9375rem;
 }
 
+main .titulos .titulos-superiores {
+  padding-left: 11.25rem;
+  padding-top: 6.25rem;
+}
+main .titulos .titulos-superiores h2 {
+  color: orange;
+  font-size: 1.875rem;
+  font-family: "Quicksand", sans-serif;
+  text-align: start;
+}
+main .titulos .titulos-superiores h1 {
+  color: white;
+  font-size: 3.125rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-align: start;
+}
+main .section-grids {
+  display: grid;
+  grid-template-columns: auto 21% 21% 21% auto;
+  grid-template-rows: auto;
+  grid-template-areas: ". medicina  administración diseño . ";
+  align-items: center;
+  padding-top: 6.25rem;
+  padding-bottom: 3.125rem;
+  gap: 3.4375rem;
+}
+main .section-grids .tarjeta-medicina a:visited {
+  text-decoration: none;
+}
+main .section-grids .tarjeta-medicina:hover {
+  background-color: #3f444e;
+}
+main .section-grids .tarjeta-medicina {
+  grid-area: medicina;
+  height: 100%;
+  background-color: #1b2031;
+  border-radius: 1.875rem;
+  padding-top: 0.625rem;
+}
+main .section-grids .tarjeta-medicina .medicina .titulo-tarjeta-medicina {
+  color: #1d60e9;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.5625rem;
+  text-align: center;
+  padding-bottom: 0.625rem;
+}
+main .section-grids .tarjeta-medicina .medicina .parrafo-superior-medicina {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  font-style: normal;
+  padding-bottom: 0.625rem;
+}
+main .section-grids .tarjeta-medicina .medicina .imagen-profesion {
+  width: 90%;
+  margin: 0 5%;
+}
+main .section-grids .tarjeta-medicina .medicina .disponible-tarjeta {
+  color: orange;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1.25rem;
+}
+main .section-grids .tarjeta-medicina .medicina .descripcion-tarjeta {
+  color: #9d9d9d;
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+  text-align: center;
+  font-weight: 500;
+  padding: 1.25rem 0.9375rem;
+}
+main .section-grids .tarjeta-administracion:hover {
+  background-color: #3f444e;
+  height: 98%;
+}
+main .section-grids .tarjeta-administracion {
+  grid-area: administración;
+  height: 100%;
+  background-color: #1b2031;
+  border-radius: 1.875rem;
+  padding-top: 0.625rem;
+}
+main .section-grids .tarjeta-administracion .administracion .titulo-tarjeta-administracion {
+  color: white;
+  color: green;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.5625rem;
+  text-align: center;
+  padding-bottom: 0.625rem;
+}
+main .section-grids .tarjeta-administracion .administracion .parrafo-superior-administracion {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  font-style: normal;
+  padding-bottom: 0.625rem;
+}
+main .section-grids .tarjeta-administracion .administracion .imagen-profesion {
+  width: 90%;
+  margin: 0 5%;
+}
+main .section-grids .tarjeta-administracion .administracion .disponible-tarjeta {
+  color: orange;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1.25rem;
+}
+main .section-grids .tarjeta-administracion .administracion .descripcion-tarjeta {
+  color: #9d9d9d;
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+  text-align: center;
+  font-weight: 500;
+  padding: 1.25rem 0.9375rem;
+}
+main .section-grids .tarjeta-diseño:hover {
+  background-color: #3f444e;
+  height: 98%;
+}
+main .section-grids .tarjeta-diseño {
+  grid-area: diseño;
+  background-color: #1b2031;
+  border-radius: 1.875rem;
+  height: 100%;
+  padding-top: 0.625rem;
+}
+main .section-grids .tarjeta-diseño .diseño .titulo-tarjeta-diseño {
+  color: white;
+  color: orange;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.5625rem;
+  text-align: center;
+  padding-bottom: 0.625rem;
+}
+main .section-grids .tarjeta-diseño .diseño .parrafo-superior-diseño {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+  font-style: normal;
+  padding-bottom: 0.625rem;
+}
+main .section-grids .tarjeta-diseño .diseño .imagen-profesion {
+  width: 90%;
+  margin: 0 5%;
+}
+main .section-grids .tarjeta-diseño .disponible-tarjeta {
+  color: orange;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1.25rem;
+}
+main .section-grids .tarjeta-diseño .descripcion-tarjeta {
+  color: #9d9d9d;
+  font-family: "Quicksand", sans-serif;
+  font-size: medium;
+  text-align: center;
+  font-weight: 500;
+  padding: 1.25rem 0.9375rem;
+}
+main .section-grids .tarjeta-diseño .lista-de-contenido {
+  color: #b0b0b0;
+  font-family: "Quicksand", sans-serif;
+  font-size: large;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  padding-left: 2.5rem;
+  padding-bottom: 1.875rem;
+  list-style: none;
+}
+main .section-grids .tarjeta-diseño .lista-de-contenido a:visited {
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
 @media (max-width: 1024px) {
   main .primera-seccion {
     padding-bottom: 100px;
@@ -306,7 +501,7 @@ footer .copyright {
   header {
     height: auto;
     padding-bottom: 3.125rem;
-    padding-right: 1.875rem;
+    padding-right: 0;
   }
   header .barra-de-navegacion {
     display: grid;
@@ -327,7 +522,7 @@ footer .copyright {
     padding-top: 1.875rem;
     font-size: 1.25rem;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 1.5625rem;
     padding-right: 0;
   }
   main .contenedor-de-fotos .fotos-personas .persona div h5 {
@@ -353,13 +548,14 @@ footer .copyright {
   }
   header .nav-cursos ul {
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 25%;
     padding-top: 1.875rem;
-    padding-right: 20%;
-    padding-left: 34%;
     text-align: start;
     font-size: 1.5625rem;
     gap: 2.5rem;
+  }
+  header .nav-cursos ul li {
+    text-align: center;
   }
   main .primera-seccion {
     display: grid;
@@ -374,12 +570,14 @@ footer .copyright {
     font-size: 2.8125rem;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
+    margin: 0;
   }
   main .primera-seccion .descripcion-orient {
     text-align: center;
     font-size: 1.5625rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    margin: 0;
   }
   main .primera-seccion .segunda-seccion img {
     width: 90%;
@@ -443,8 +641,7 @@ footer .copyright {
 }
 @media (max-width: 320px) {
   header {
-    height: 18.75rem;
-    padding-bottom: 18.75rem;
+    height: auto;
   }
   header .barra-de-navegacion {
     display: grid;
@@ -460,10 +657,8 @@ footer .copyright {
   }
   header .nav-cursos ul {
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 15%;
     padding-top: 1.875rem;
-    padding-right: 20%;
-    padding-left: 34%;
     text-align: start;
     font-size: 1.5625rem;
     gap: 2.5rem;
@@ -507,7 +702,8 @@ footer .copyright {
     width: 95%;
   }
   main .contenedor-de-fotos .fotos-personas .persona div h5 {
-    bottom: 14%;
+    bottom: 15%;
+    font-size: 90%;
   }
   main .contenedor-surgimiento {
     padding-top: 6.25rem;

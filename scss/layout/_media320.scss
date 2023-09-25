@@ -1,7 +1,6 @@
 @media (max-width: 320px) {
     header {
-        height: 18.75rem;
-        padding-bottom: 18.75rem;
+        height: auto;
 
         .barra-de-navegacion {
             display: grid;
@@ -22,10 +21,8 @@
 
         .nav-cursos ul {
             flex-direction: column;
-            margin: 0 auto;
+            margin: 0 15%;
             padding-top: 1.875rem;
-            padding-right: 20%;
-            padding-left: 34%;
             text-align: start;
             font-size: 1.5625rem;
             gap: 2.5rem;
@@ -86,7 +83,8 @@
 
                     div {
                         h5 {
-                            bottom: 14%;
+                            bottom: 15%;
+                            font-size: 90%;
                         }
                     }
 

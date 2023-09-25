@@ -21,13 +21,14 @@
 
         .nav-cursos ul {
             flex-direction: column;
-            margin: 0 auto;
+            margin: 0 25%;
             padding-top: 1.875rem;
-            padding-right: 20%;
-            padding-left: 34%;
             text-align: start;
             font-size: 1.5625rem;
             gap: 2.5rem;
+            li{
+                text-align: center;
+            }
         }
     }
 
@@ -46,6 +47,7 @@
                 font-size: 2.8125rem;
                 padding-left: .625rem;
                 padding-right: .625rem;
+                margin: 0;
 
             }
 
@@ -54,6 +56,7 @@
                 font-size: 1.5625rem;
                 padding-left: 1.25rem;
                 padding-right: 1.25rem;
+                margin:0;
             }
 
             .segunda-seccion {
