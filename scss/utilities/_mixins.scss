@@ -1,11 +1,32 @@
-@mixin presentacion ($area, $fuente, $color, $sizefont, $weightfont, $toppadding, $rightpadding, $aligntext, $width){
+@mixin presentacion ($area, $fuente, $color, $sizefont, $weightfont, $toppadding, $rightpadding, $aligntext, $width) {
     grid-area: $area;
     font-family: $fuente;
     color: $color;
     font-size: $sizefont;
     font-weight: $weightfont;
     padding-top: $toppadding;
-    padding-right:$rightpadding;
+    padding-right: $rightpadding;
     text-align: $aligntext;
     width: $width;
+}
+
+@mixin grids-cursos ($display, $columns, $rows, $areas, $alignitems, $paddingtop, $paddingbottom, $gap) {
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+    align-items: $alignitems;
+    padding-top: $paddingtop;
+    padding-bottom: $paddingbottom;
+    gap: $gap;
+}
+
+@mixin titulo-tarjeta ($color, $font, $weight, $decoration, $size, $align, $paddingbottom) {
+    color: $color;
+    font-family: $font;
+    font-weight: $weight;
+    text-decoration: $decoration;
+    font-size: $size;
+    text-align: $align;
+    padding-bottom: $paddingbottom;
 }

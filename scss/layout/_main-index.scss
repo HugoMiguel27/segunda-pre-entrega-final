@@ -11,10 +11,10 @@ main {
             padding-bottom: 11.25rem;
             
             .titulo-principal{
-                @include presentacion (tituloprincipal, 'Quicksand', white, 4.6875rem, 700, 3.75rem, 1.5625rem, end, 100%);
+                @include presentacion (tituloprincipal, 'Quicksand', $texto-blanco, 4.6875rem, 700, 3.75rem, 1.5625rem, end, 100%);
             }
             .descripcion-orient{
-                @include presentacion (descripcion, 'DM Sans', white, x-large, 500, 3.75rem, 1.5625rem, end, 100%);
+                @include presentacion (descripcion, 'DM Sans', $texto-blanco, x-large, 500, 3.75rem, 1.5625rem, end, 100%);
             }
             .segunda-seccion{
                 display: flex;

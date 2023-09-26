@@ -27,6 +27,7 @@ main {
         grid-template-columns: auto 25% 40% auto;
         grid-template-rows: auto;
         grid-template-areas: ". manual2023 descripcion .";
+        
 
         .imagen-manual-2023 {
             grid-area: manual2023;
@@ -99,11 +100,10 @@ main {
 }
 
     .formulario-2023 {
-        display: grid;
-        padding-top: 3.125rem;
-        grid-template-columns: auto 25% 40% auto;
-        grid-template-rows: auto;
+        @extend .manual-2023;
+        padding-top: none;
         grid-template-areas: ". formulario2023 descripcionformulario .";
+        
 
         .imagen-formulario-2023 {
             grid-area: formulario2023;

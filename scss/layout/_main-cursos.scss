@@ -7,14 +7,14 @@ main {
             h2 {
                 color: orange;
                 font-size: 1.875rem;
-                font-family: 'Quicksand', sans-serif;
+                font-family: $fuente-quicksand;
                 text-align: start;
             }
 
             h1 {
                 color: white;
                 font-size: 3.125rem;
-                font-family: 'DM Sans', sans-serif;
+                font-family: $fuente-dmsans;
                 font-weight: 700;
                 text-align: start;
             }
@@ -22,6 +22,8 @@ main {
     }
 
     .section-grids {
+        @include grids-cursos (grid, auto 21% 21% 21% auto, auto, ". medicina administración diseño .", center, 6.25rem, 3.125rem, 3.4375rem);
+        /*
         display: grid;
         grid-template-columns: auto 21% 21% 21% auto;
         grid-template-rows: auto;
@@ -30,6 +32,7 @@ main {
         padding-top: 6.25rem;
         padding-bottom: 3.125rem;
         gap: 3.4375rem;
+        */
 
         .tarjeta-medicina a:visited {
             text-decoration: none;
@@ -51,6 +54,8 @@ main {
 
             .medicina {
                 .titulo-tarjeta-medicina {
+                    @include titulo-tarjeta (#1d60e9, 'DM Sans', 700, underline, 1.5625rem, center, .625rem);
+                    /*
                     color: #1d60e9;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
@@ -58,10 +63,11 @@ main {
                     font-size: 1.5625rem;
                     text-align: center;
                     padding-bottom: .625rem;
+                    */
                 }
 
                 .parrafo-superior-medicina {
-                    color: white;
+                    color: $texto-blanco;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 500;
                     font-size: 1.25rem;
@@ -76,7 +82,7 @@ main {
                 }
 
                 .disponible-tarjeta {
-                    color: orange;
+                    color: $texto-naranja;
                     font-family: 'DM Sans', sans-serif;
                     font-size: 1.875rem;
                     text-align: center;
@@ -118,6 +124,7 @@ main {
             border: 1px solid yellow;
             background-color: #111111;
         }
+        
 
         .tarjeta-administracion {
             grid-area: administración;
@@ -128,7 +135,8 @@ main {
 
             .administracion {
                 .titulo-tarjeta-administracion {
-                    color: white;
+                    @include titulo-tarjeta (green, 'DM Sans', 700, underline, 1.5625rem, center, .625rem);
+                    /*
                     color: green;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
@@ -136,10 +144,11 @@ main {
                     font-size: 1.5625rem;
                     text-align: center;
                     padding-bottom: .625rem;
+                    */
                 }
 
                 .parrafo-superior-administracion {
-                    color: white;
+                    color: $texto-blanco;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 500;
                     font-size: 1.25rem;
@@ -154,7 +163,7 @@ main {
                 }
 
                 .disponible-tarjeta {
-                    color: orange;
+                    color: $texto-naranja;
                     font-family: 'DM Sans', sans-serif;
                     font-size: 1.875rem;
                     text-align: center;
@@ -205,7 +214,8 @@ main {
 
             .diseño {
                 .titulo-tarjeta-diseño {
-                    color: white;
+                    @include titulo-tarjeta ($texto-naranja, 'DM Sans', 700, underline, 1.5625rem, center, .625rem);
+                    /*
                     color: orange;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
@@ -213,10 +223,11 @@ main {
                     font-size: 1.5625rem;
                     text-align: center;
                     padding-bottom: .625rem;
+                    */
                 }
 
                 .parrafo-superior-diseño {
-                    color: white;
+                    color: $texto-blanco;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 500;
                     font-size: 1.25rem;
@@ -231,7 +242,7 @@ main {
                 }
 
                 .disponible-tarjeta {
-                    color: orange;
+                    color: $texto-naranja;
                     font-family: 'DM Sans', sans-serif;
                     font-size: 1.875rem;
                     text-align: center;
@@ -274,7 +285,7 @@ main {
 
         .titulo-registro {
             font-size: larger;
-            color: orange;
+            color: $texto-naranja;
             font-weight: bolder;
             font-family: 'DM Sans', sans-serif;
         }
@@ -294,7 +305,7 @@ main {
             padding-right: 75rem;
 
             h1 {
-                color: white;
+                color: $texto-blanco;
                 font-size: 3.125rem;
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
@@ -304,15 +315,18 @@ main {
     }
 
     .section-grids-2 {
+
+        @include grids-cursos (grid, auto 21% 21% 21% auto, auto, ". ingenieria arquitectura programacion .", center, 6.25rem, 12.5rem, 3.4375rem);
+        /*
         display: grid;
         grid-template-columns: auto 21% 21% 21% auto;
         grid-template-rows: auto;
         grid-template-areas: ". ingenieria arquitectura programacion . ";
-        width: 100%;
         align-items: center;
         padding-top: 6.25rem;
         padding-bottom: 12.5rem;
         gap: 3.4375rem;
+        */
 
         .tarjeta-ingenieria a:visited {
             text-decoration: none;
@@ -334,6 +348,8 @@ main {
 
             a {
                 .titulo-tarjeta-ingenieria {
+                    @include titulo-tarjeta (#1d60e9, 'DM Sans', 700, underline, 1.5625rem, center, .625rem);
+                    /*
                     color: #1d60e9;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
@@ -341,10 +357,11 @@ main {
                     font-size: 1.5625rem;
                     text-align: center;
                     padding-bottom: .625rem;
+                    */
                 }
 
                 .parrafo-superior-ingenieria {
-                    color: white;
+                    color: $texto-blanco;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 500;
                     font-size: 1.25rem;
@@ -359,7 +376,7 @@ main {
                 }
 
                 .disponible-tarjeta {
-                    color: orange;
+                    color: $texto-naranja;
                     font-family: 'DM Sans', sans-serif;
                     font-size: 1.875rem;
                     text-align: center;
@@ -411,7 +428,8 @@ main {
 
             a {
                 .titulo-tarjeta-arquitectura {
-                    color: white;
+                    @include titulo-tarjeta (green, 'DM Sans', 700, underline, 1.5625rem, center, .625rem);
+                    /*
                     color: green;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
@@ -419,10 +437,11 @@ main {
                     font-size: 1.5625rem;
                     text-align: center;
                     padding-bottom: .625rem;
+                    */
                 }
 
                 .parrafo-superior-arquitectura {
-                    color: white;
+                    color: $texto-blanco;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 500;
                     font-size: 1.25rem;
@@ -437,7 +456,7 @@ main {
                 }
 
                 .disponible-tarjeta {
-                    color: orange;
+                    color: $texto-naranja;
                     font-family: 'DM Sans', sans-serif;
                     font-size: 1.875rem;
                     text-align: center;
@@ -488,7 +507,8 @@ main {
 
             a {
                 .titulo-tarjeta-programacion {
-                    color: white;
+                    @include titulo-tarjeta (orange, 'DM Sans', 700, underline, 1.5625rem, center, .625rem);
+                    /*
                     color: orange;
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
@@ -496,10 +516,11 @@ main {
                     font-size: 1.5625rem;
                     text-align: center;
                     padding-bottom: .625rem;
+                    */
                 }
 
                 .parrafo-superior-programacion {
-                    color: white;
+                    color: $texto-blanco;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 500;
                     font-size: 1.25rem;
@@ -514,7 +535,7 @@ main {
                 }
 
                 .disponible-tarjeta {
-                    color: orange;
+                    color: $texto-naranja;
                     font-family: 'DM Sans', sans-serif;
                     font-size: 1.875rem;
                     text-align: center;
