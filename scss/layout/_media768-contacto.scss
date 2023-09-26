@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    main {
+        section {
+            .titulos-superiores-contacto {
+                padding-left: 12%
+            }
+        }
+        .medios-de-contacto{
+            .callcenter-contacto{
+                img{
+                    width: 80%;
+                    padding-left: 15%;
+                }
+            }
+        }
+        .recuerda{
+            padding-left: 12%;
+        }
+    }
+}

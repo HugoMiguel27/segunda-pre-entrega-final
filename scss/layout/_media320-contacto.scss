@@ -1,0 +1,17 @@
+@media (max-width: 320px) {
+    main {
+        section {
+            .titulos-superiores-contacto {
+                margin: 0 10%;
+                h2 {
+                    font-size: 1.375rem;
+                    padding-bottom: .3125rem;
+                }
+
+                h1 {
+                    font-size: 2.1875rem;
+                }
+            }
+        }
+    }
+}

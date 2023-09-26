@@ -26,9 +26,9 @@ main {
         display: grid;
         grid-template-columns: auto 24% 25% 25% auto;
         grid-template-rows: repeat(3, auto);
-        grid-template-areas: ".    WhatsApp    CallCenter   CallCenter    ."
-            ".    Messenger   CallCenter   CallCenter    ."
-            ".    Teléfono    CallCenter   CallCenter    .";
+        grid-template-areas:    ".    WhatsApp    CallCenter   CallCenter    ."
+                                ".    Messenger   CallCenter   CallCenter    ."
+                                ".    Teléfono    CallCenter   CallCenter    .";
 
         place-items: center;
         padding-bottom: 6.25rem;
