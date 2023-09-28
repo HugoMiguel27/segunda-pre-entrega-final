@@ -129,15 +129,16 @@ main .contenedor-de-fotos .fotos-personas {
   justify-content: center;
   gap: 3.75rem;
 }
-main .contenedor-de-fotos .fotos-personas img:hover {
-  transform: scale(1.2);
+main .contenedor-de-fotos img:hover {
+  transform: scale(1.1);
+  box-shadow: 0.3125rem 0.1875rem black;
 }
-main .contenedor-de-fotos .fotos-personas .persona {
+main .contenedor-de-fotos .persona {
   position: relative;
   display: inline-block;
   text-align: center;
 }
-main .contenedor-de-fotos .fotos-personas .persona div h5 {
+main .contenedor-de-fotos .persona div h5 {
   font-family: "DM Sans", sans-serif;
   font-size: 1.125rem;
   color: white;
@@ -146,7 +147,7 @@ main .contenedor-de-fotos .fotos-personas .persona div h5 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .contenedor-de-fotos .fotos-personas .persona div p {
+main .contenedor-de-fotos .persona div p {
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
   color: white;
@@ -155,11 +156,12 @@ main .contenedor-de-fotos .fotos-personas .persona div p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .contenedor-surgimiento {
+
+.contenedor-surgimiento {
   padding-top: 12.5rem;
   padding-bottom: 9.375rem;
 }
-main .contenedor-surgimiento .surgimiento {
+.contenedor-surgimiento .surgimiento {
   font-family: "Quicksand", sans-serif;
   color: #ffa200;
   text-align: center;
@@ -167,7 +169,7 @@ main .contenedor-surgimiento .surgimiento {
   font-weight: 700;
   padding-bottom: 6.25rem;
 }
-main .contenedor-surgimiento .surgimiento-parrafo {
+.contenedor-surgimiento .surgimiento-parrafo {
   font-family: "Quicksand", sans-serif;
   color: white;
   text-align: center;
@@ -179,12 +181,13 @@ main .contenedor-surgimiento .surgimiento-parrafo {
   border-radius: 1.875rem;
   margin: 0 25%;
 }
-main .contenedor-dedicacion {
+
+.contenedor-dedicacion {
   padding-top: 12.5rem;
   padding-bottom: 9.375rem;
   background-color: #212429;
 }
-main .contenedor-dedicacion .pregunta-dedicacion {
+.contenedor-dedicacion .pregunta-dedicacion {
   font-family: "Quicksand", sans-serif;
   color: #ffa200;
   text-align: center;
@@ -192,7 +195,7 @@ main .contenedor-dedicacion .pregunta-dedicacion {
   font-weight: 700;
   padding-bottom: 6.25rem;
 }
-main .contenedor-dedicacion .dedicacion-parrafo {
+.contenedor-dedicacion .dedicacion-parrafo {
   font-family: "Quicksand", sans-serif;
   color: white;
   text-align: center;
